@@ -1,0 +1,30 @@
+{
+  "name": "DENESOR",
+  "version": "0.0.7",
+  "description": "project denesor",
+  "scripts": {
+    "test": "denesor.js",
+    "start": "ts-node ./bin/start.ts"
+  },
+  "keywords": [
+    "denesor",
+    "bot",
+    "discord"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "discord": "^0.8.2",
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "google-translate-api": "^2.3.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "node-schedule": "^1.3.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.10",
+    "tslint": "^6.1.3"
+  }
+}

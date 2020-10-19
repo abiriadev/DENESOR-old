@@ -1,0 +1,15 @@
+*.git
+
+*.gitignore
+
+/settings/*.env
+/settings/*.env.dev
+
+/dbtest.js
+
+/node_modules
+
+/memo
+
+/.vscode
+
