@@ -1,2 +1,2 @@
-#DENESOR
-ver 0.8.0
+# DENESOR
+ver 0.8.1

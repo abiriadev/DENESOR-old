@@ -11,10 +11,9 @@ import Command from "./Command"
 let me: Command;
 me = new Command(
     {
-        condition: msg => msg.content = "me",
-        action: msg => msg.reply(`네, ${msg.author.username} 님!`)
+        condition: msg => msg.content == "me",
+        action: msg => msg.reply(`네, ${msg.author.username} 님!`),
                 // msg => { /* msg.channel.send("봇은 싫어요! 저리 가세요!") */
-        ,
         description: `important command`
     }
     // {condition : msg => msg.content = "me", action : msg => msg.reply(`네, $msg.author 님!`), description : 'generel command'}

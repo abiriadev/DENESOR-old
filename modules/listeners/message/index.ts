@@ -2,55 +2,18 @@ export {}
 
 
 // import fs from "fs";
-
-
 // import {
 //     config
 // } from "process";
 // import Command from "./Command";
+
+
 import Command from "./Command"
+
+import config from "./../../../settings/config.json"
 
 import me from "./me";
 
-// const config = require('../../../../settings/config.json');
-// const config = require('settings/config.json');
-// import config from "";
-// declare module `*.json` {
-//     const value: any;
-//     export default value;
-// }
-//
-// import * as config from ".\\..\\..\\..\\settings\\config.json";
-
-
-import {promises as fs} from "fs";
-// config = JSON.parse((async () => await fs.readFile(경로))())
-// const config = JSON.parse(
-
-// )
-
-// const d: Promise<string> = (
-//     async () => {
-//         return data.toString()
-//     }
-// )()
-// const a = async () => {
-//
-//     let data = await fs.readFile(".\\..\\..\\..\\settings\\config.json")
-//     data = data.toString()
-//     console.log(data)
-//     return JSON.parse(data)
-//
-// }
-
-
-// const config = JSON.parse(d.toString())
-// import config from ".\\..\\..\\..\\settings\\config.json";
-import config from "./../../../settings/config.json"
-import {log} from "util";
-
-// ".\\..\\..\\..\\settings\\config.json"
-// export {}
 try {
     try {
 // const confi
@@ -62,7 +25,7 @@ try {
         throw "패키지 로드 중 에러가 발생했습니다"
     }
 
-// let command_list = []
+    let command_list = []
 
     let bot_out: Command;
     bot_out = new Command( //DM으로 올때만 / ! 으로 올때만
@@ -72,15 +35,30 @@ try {
         }
     )
 
+    //////////////////////////////////////////////////////////////
+    // let a = [/a/, /b/]
+
+    // console.log(config.bad_word_list)
+
     let message_filter: Command;
     message_filter = new Command(
         {
             condition: msg => {
-                return msg.content in config.bad_word_list;
-            }, action: msg => msg.reply("욕은 나빠요!"), description: 'important command'
+                // return msg.content config.bad_word_list;
+                let a = 0
+                config.bad_word_list.forEach(word => {
+                    if (msg.content.match(new RegExp(word, 'i'))) return a = 1
+                })
+                return a
+
+                // return 1
+            },
+            action: msg => msg.reply("욕은 나빠요!"), description: 'important command'
         }
         //DM으로 올때만 / ! 으로 올때만
-    );
+    )
+
+    // a = []
 
     module.exports = async msg => {
 
@@ -88,6 +66,7 @@ try {
             msg.reply("ㅋㅋㅋ")
         }
 
+        // let response: string = ""
 
         try {
             // 나중에 배열 ing
@@ -101,9 +80,12 @@ try {
             else if (msg.content.charAt(0) == config.prefix) {
                 msg.content = msg.content.slice(1)
 
+                console.log(`감지된 명령어: ${msg.content}`)
+                // console.log(msg.content)
 
                 if (asd(me)) me.action(msg);
                 else msg.channel.send(`\'\`${msg.content}\`\' 존재하지 않는 명령어입니다`)
+
             } else {
                 //
             }
@@ -111,7 +93,7 @@ try {
         } catch (err) {
             console.log(err);
         } finally {
-            console.log("메세지 접수 정상종료")
+            if (msg.author.id != config.self_ID) console.log(`${msg.author.tag} 의 메세지 접수 정상종료: '${msg.content.length >= 13 ? msg.content.slice(0, 12) + '...' : msg.content}'`)
         }
     }
 
@@ -119,3 +101,40 @@ try {
     console.error(err)
     throw "index.ts에서 에러 발생이다 이 븽신아"
 }
+
+// const config = require('../../../../settings/config.json');
+// const config = require('settings/config.json');
+// import config from "";
+// declare module `*.json` {
+//     const value: any;
+//     export default value;
+// }
+//
+// import * as config from ".\\..\\..\\..\\settings\\config.json";
+
+import {promises as fs} from "fs";
+
+// config = JSON.parse((async () => await fs.readFile(경로))())
+// const config = JSON.parse(
+
+
+// )
+// const d: Promise<string> = (
+//     async () => {
+//         return data.toString()
+//     }
+// )()
+// const a = async () => {
+//
+//     let data = await fs.readFile(".\\..\\..\\..\\settings\\config.json")
+//     data = data.toString()
+//     console.log(data)
+//     return JSON.parse(data)
+//
+// }
+// const config = JSON.parse(d.toString())
+// import config from ".\\..\\..\\..\\settings\\config.json";
+
+import {log} from "util";
+// ".\\..\\..\\..\\settings\\config.json"
+// export {}
