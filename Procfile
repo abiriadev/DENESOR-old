@@ -1,1 +1,1 @@
-worker : npm i @types/node
+worker : ts-node ./bin/start.ts
