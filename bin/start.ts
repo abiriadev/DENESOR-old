@@ -3,7 +3,6 @@ export {}
 // '--isolatedModules'
 import dotenv from "dotenv"
 import path from "path"
-
 import config from "./../settings/config.json"
 // import config from path.resolve(
 //     process.cwd(),
@@ -12,8 +11,6 @@ import config from "./../settings/config.json"
 // #!/usr/bin/env node
 
 // 'use strict'
-// const config = require('./../settings/config.json')
-
 // let a = {
 //     path: path.resolve(
 //         process.cwd(),
@@ -35,8 +32,6 @@ dotenv.config({
     // process.env.NODE_ENV == "production" ? ".env" : ".env.dev",
     // "settings/config.json"
 // )
-
-// const config =
 
 // import config from config_path
 // import config from
