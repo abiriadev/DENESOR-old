@@ -102,11 +102,11 @@ const denesor = new discord.Client(/* config.json bot_settings */);
 
 // const prefix = config.prefix;
 
-(async () => {
-    await fs.writeFile(
-        './settings/denesor.json',
-        JSON.stringify(denesor))
-})()
+// (async () => {
+//     await fs.writeFile(
+//         './settings/denesor.json',
+//         JSON.stringify(denesor))
+// })()
 
 
 try { // for 로 이벤트 연결?
@@ -117,7 +117,7 @@ try { // for 로 이벤트 연결?
 // denesor.on('message', onmessage1);
 // denesor.on('message', onmessage2);
     denesor.on('message', require('./modules/listeners/message'))
-    denesor.on('message', save)
+    // denesor.on('message', save)
     // save 구문
     denesor.on('guildMemberAdd', guildMemberAdd)
     denesor.on('guildMemberRemove', guildMemberRemove)

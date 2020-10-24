@@ -18,14 +18,14 @@ import config from "./../settings/config.json"
 //     )
 // }
 
-dotenv.config({
-        path: path.resolve(
-            process.cwd(),
-            'settings',
-            process.env.NODE_ENV == "production" ? ".env" : ".env.dev"
-        )
-    }
-)
+// dotenv.config({
+//         path: path.resolve(
+//             process.cwd(),
+//             'settings',
+//             process.env.NODE_ENV == "production" ? ".env" : ".env.dev"
+//         )
+//     }
+// )
 
 // const config_path: string = path.resolve(
 //     process.cwd(),
