@@ -26,7 +26,10 @@ guildMemberAdd1 = member => {
     // const role = member.guild.roles.cache.find(role_ele => role_ele.name === '회원');
     // member.roles.add(role);
 
-    const channel = member.guild.channels.cache.find(ch => ch.id === config.welcome_channel_ID);
+    console.log("환영인사!!")
+    console.log(config.welcome_channel_ID)
+
+    const channel = member.guild.channels.cache.find(ch => ch.id == config.welcome_channel_ID);
 
     if (!channel) return;
 
@@ -34,7 +37,7 @@ guildMemberAdd1 = member => {
 
     setTimeout(() => {
         // const ch_ID = "752422604194840586"
-        const channel2 = member.guild.channels.cache.find(ch => ch.id === config.introduce_channel_ID);
+        const channel2 = member.guild.channels.cache.find(ch => ch.id == config.introduce_channel_ID);
         channel.send(`${channel2.toString()} 를 확인해보시는 건 어떨까요?`);
     }, 2000);
 }

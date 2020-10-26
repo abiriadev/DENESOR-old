@@ -117,7 +117,7 @@ try { // for 로 이벤트 연결?
 // denesor.on('message', onmessage1);
 // denesor.on('message', onmessage2);
     denesor.on('message', require('./modules/listeners/message'))
-    // denesor.on('message', save)
+    denesor.on('message', save)
     // save 구문
     denesor.on('guildMemberAdd', guildMemberAdd)
     denesor.on('guildMemberRemove', guildMemberRemove)
