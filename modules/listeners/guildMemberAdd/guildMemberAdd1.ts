@@ -27,19 +27,28 @@ guildMemberAdd1 = member => {
     // member.roles.add(role);
 
     console.log("환영인사!!")
-    console.log(config.welcome_channel_ID)
 
-    const channel = member.guild.channels.cache.find(ch => ch.id == config.welcome_channel_ID);
+    try {
 
-    if (!channel) return;
 
-    channel.send(util.format(config.welcome_message, member.user));
+        console.log(config.welcome_channel_ID)
 
-    setTimeout(() => {
-        // const ch_ID = "752422604194840586"
-        const channel2 = member.guild.channels.cache.find(ch => ch.id == config.introduce_channel_ID);
-        channel.send(`${channel2.toString()} 를 확인해보시는 건 어떨까요?`);
-    }, 2000);
+        const channel = member.guild.channels.cache.find(ch => ch.id == config.welcome_channel_ID);
+
+        if (!channel) return;
+
+        channel.send(util.format(config.welcome_message, member.user));
+
+        setTimeout(() => {
+            // const ch_ID = "752422604194840586"
+            const channel2 = member.guild.channels.cache.find(ch => ch.id == config.introduce_channel_ID);
+            channel.send(`${channel2.toString()} 를 확인해보시는 건 어떨까요?`);
+        }, 2000);
+
+    } catch (err) {
+        console.error(err)
+        console.log("환영인사 중 에러가 발생했습니다!")
+    }
 }
 
 export default guildMemberAdd1

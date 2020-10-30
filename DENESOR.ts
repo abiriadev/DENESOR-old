@@ -3,6 +3,11 @@ export {}
 // denesor.on('message', attendance_check);
 // denesor.on('message', dobae);
 import save from "./modules/listeners/message/save";
+// import DB from "./modules/utils/promiseDB"
+
+// DB.quer
+
+
 // try {
 
 import config from "./settings/config.json";
@@ -37,7 +42,23 @@ import {promises as fs} from "fs";
 //     throw "패키지 로드 중 문제가 발생했습니다"
 // }
 
-const denesor = new discord.Client(/* config.json bot_settings */);
+
+
+
+
+let denesor = new discord.Client(/* config.json bot_settings */);
+
+// if (discord) {
+//
+// }
+// let INTENTS = discord.Intents.all()
+
+// discord.I
+// let denesor = discord.Client(INTENTS=INTENTS)
+// discord.Client()
+
+
+
 
 // global['custom'] = {
 //     denesor // client로 이름 수정
@@ -115,11 +136,12 @@ try { // for 로 이벤트 연결?
         // 준비되면 채널에 인사하기
     });
 // denesor.on('message', onmessage1);
+    denesor.on('guildMemberAdd', guildMemberAdd)
+    // save 구문
 // denesor.on('message', onmessage2);
     denesor.on('message', require('./modules/listeners/message'))
     denesor.on('message', save)
-    // save 구문
-    denesor.on('guildMemberAdd', guildMemberAdd)
+    // denesor.on('guildMemberAdd', )
     denesor.on('guildMemberRemove', guildMemberRemove)
 
 // denesor.on('messageReactionAdd', messageReactionAdd1);

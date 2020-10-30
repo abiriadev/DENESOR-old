@@ -1,6 +1,5 @@
 export {}
 
-
 // import fs from "fs";
 // import {
 //     config
@@ -13,6 +12,7 @@ import Command from "./Command"
 import config from "./../../../settings/config.json"
 
 import me from "./me";
+import select_all from "./select_all"
 
 try {
     try {
@@ -77,6 +77,7 @@ try {
 
             if (asd(bot_out)) bot_out.action(msg);
             else if (asd(message_filter)) message_filter.action(msg);
+            // else if ()
             else if (msg.content.charAt(0) == config.prefix) {
                 msg.content = msg.content.slice(1)
 
@@ -84,6 +85,7 @@ try {
                 // console.log(msg.content)
 
                 if (asd(me)) me.action(msg);
+                else if(asd(select_all)) select_all.action(msg)
                 else msg.channel.send(`\'\`${msg.content}\`\' 존재하지 않는 명령어입니다`)
 
             } else {
@@ -93,13 +95,15 @@ try {
         } catch (err) {
             console.log(err);
         } finally {
+            // console.log("msg: 는")
+            // console.dir(msg)
             if (msg.author.id != config.self_ID) console.log(`${msg.author.tag} 의 메세지 접수 정상종료: '${msg.content.length >= 13 ? msg.content.slice(0, 12) + '...' : msg.content}'`)
         }
     }
 
 } catch (err) {
     console.error(err)
-    throw "index.ts에서 에러 발생이다 이 븽신아"
+    throw "index.ts에서 에러 발생이다, 이녀석아!!!"
 }
 
 // const config = require('../../../../settings/config.json');
