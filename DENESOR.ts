@@ -1,3 +1,5 @@
+// node --trace-deprecation myscript build
+
 export {}
 
 // denesor.on('message', attendance_check);
@@ -11,10 +13,11 @@ import save from "./modules/listeners/message/save";
 // try {
 
 import config from "./settings/config.json";
-import guildMemberAdd from "./modules/listeners/guildMemberAdd/guildMemberAdd1"
+import guildMemberAdd from "./modules/listeners/guildMemberAdd"
+// const guildMemberAdd = require("./modules/listeners/guildMemberAdd")
 
 
-import guildMemberRemove from "./modules/listeners/guildMemberRemove/guildMemberRemove1"
+import guildMemberRemove from "./modules/listeners/guildMemberRemove"
 // const denesor = require('./settings/denesor.json');
 
 // import discord from "discord.js";
@@ -43,9 +46,6 @@ import {promises as fs} from "fs";
 // }
 
 
-
-
-
 let denesor = new discord.Client(/* config.json bot_settings */);
 
 // if (discord) {
@@ -56,8 +56,6 @@ let denesor = new discord.Client(/* config.json bot_settings */);
 // discord.I
 // let denesor = discord.Client(INTENTS=INTENTS)
 // discord.Client()
-
-
 
 
 // global['custom'] = {
@@ -130,19 +128,101 @@ let denesor = new discord.Client(/* config.json bot_settings */);
 // })()
 
 
-try { // for 로 이벤트 연결?
+try { // for 로 이벤트 연결? -> ㄱㄱ
+
+    // let listener_list = {
+    //     "ready": () => {
+    //         console.log(`Logged in as ${denesor.user.tag}!`);
+    //         // 준비되면 채널에 인사하기
+    //     },
+    //     "guildMemberAdd": guildMemberAdd,
+    //     "guildMemberRemove": guildMemberRemove,
+    //     "message": require('./modules/listeners/message'),
+    //
+    // }
+
+    // listener_list.
+
+
+    // class Foo {
+    //
+    // }
+    //
+    // interface Object {
+    //     GetFoo(): Foo;
+    //
+    //     // GetFooAsString(): string;
+    // }
+
+//     This
+//     is
+//     problematic
+// ...
+//     Object.prototype["GetFoo"] = function() {
+//         return new Foo();
+//
+//         console.log("bbbbbbbbbbbbbb")
+//
+//         // Note, this line is just for testing...I don't want my function to just return a blank instance of Foo!
+//     }
+
+//This is ok.
+// Object.prototype.GetFooAsString = function () {
+    // return this.GetFoo().toString();
+// }
+//     interface Images {
+//         main: string;
+//         [key:string]: string;
+//     }
+
+    // class aa
+
+    // function getMainImageUrl(images: Images): string {
+    //     return images.main;
+    // }
+
+    // const aaa = new Image()
+    //
+    // getMainImageUrl(aaa)
+    //
+    // let a:any = {};
+    // //
+    // a.GetFoo()
+
+// console.log("dkjdhffkjdf")
+
+    // console.log("aaaaaaaaaaaaaaa")
+
+    // listener_list
+
+    // for (const event_type in listener_list) {
+    //     denesor.on(event_type, listener_list[event_type])
+    // }
     denesor.on('ready', () => {
         console.log(`Logged in as ${denesor.user.tag}!`);
         // 준비되면 채널에 인사하기
     });
-// denesor.on('message', onmessage1);
+
     denesor.on('guildMemberAdd', guildMemberAdd)
     // save 구문
 // denesor.on('message', onmessage2);
     denesor.on('message', require('./modules/listeners/message'))
+
     denesor.on('message', save)
     // denesor.on('guildMemberAdd', )
     denesor.on('guildMemberRemove', guildMemberRemove)
+    // denesor.on('ready', () => {
+    //     console.log(`Logged in as ${denesor.user.tag}!`);
+        // 준비되면 채널에 인사하기
+    // });
+    // denesor.on('message', require('./modules/listeners/message'));
+    // denesor.on('guildMemberAdd', guildMemberAdd)
+    // save 구문
+// denesor.on('message', onmessage2);
+//     denesor.on('message', require('./modules/listeners/message'))
+//     denesor.on('message', save)
+    // denesor.on('guildMemberAdd', )
+    // denesor.on('guildMemberRemove', guildMemberRemove)
 
 // denesor.on('messageReactionAdd', messageReactionAdd1);
 

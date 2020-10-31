@@ -1,7 +1,19 @@
+import {constants} from "os";
+
 export {}
 
 import config from "./../../../settings/config.json"
+// import errno = module
+// try {
+    // @ts-ignore
+    // import util from 'util'
+// const util = require('util')
 import util from 'util'
+
+// } catch (err) {
+//     console.error(err)
+//     console.log("에라......")
+// }
 
 // module.exports = member => {
 //
@@ -20,8 +32,8 @@ import util from 'util'
 //     }, 2000);
 // };
 
-let guildMemberAdd1
-guildMemberAdd1 = member => {
+let guildMemberAdd
+guildMemberAdd = member => {
 
     // const role = member.guild.roles.cache.find(role_ele => role_ele.name === '회원');
     // member.roles.add(role);
@@ -51,4 +63,4 @@ guildMemberAdd1 = member => {
     }
 }
 
-export default guildMemberAdd1
+export default guildMemberAdd

@@ -17,7 +17,7 @@ import select_all from "./select_all"
 try {
     try {
 // const confi
-        const discord = require('discord');
+//         const discord = require('discord');
 // const config = require();
 //         const denesor = require("C:\\windowse\\trash box\\DashBoards\\Tools\\DENESOR\\settings\\denesor.json");
     } catch (err) {

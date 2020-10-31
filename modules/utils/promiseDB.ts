@@ -185,7 +185,7 @@ export {query}
 // })()
 
 // pool.getConnection()
-// console.log("re: ", re)
+// console.log("re: ", re)k
 
 // (async () => {
 //     // console.log(await re)
