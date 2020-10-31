@@ -1,11 +1,11 @@
 // let me;
 export {}
 // const Command = require('./Command')
-import Command from "./Command"
+import Command from "../../../classes/Command"
 // import DB from "./../../utils/promiseDB"
 
 // import  from "./../../utils/promiseDB";
-import * as DB from "./../../utils/promiseDB";
+import * as DB from "../../../utils/promiseDB";
 // let me =
 
 // DB.qu

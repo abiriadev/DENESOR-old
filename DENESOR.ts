@@ -1,4 +1,14 @@
-// node --trace-deprecation myscript build
+declare const signalR: any;
+declare const moment: any;
+
+function listening(obj: any, event_type: string, lietener: Function) {
+    // @ts-ignore
+    obj.on(event_type, lietener)
+}
+
+// function listening(obj: any, event_type: string, listener_list: Array<Function>) {
+//     listener_list.forEach(listener => obj.on(event_type, listener))
+// }// node --trace-deprecation myscript build
 
 import {Interface} from "readline";
 
@@ -16,6 +26,8 @@ import save from "./modules/listeners/message/save";
 
 import config from "./settings/config.json";
 import guildMemberAdd from "./modules/listeners/guildMemberAdd"
+import ready from "./modules/listeners/ready/ready";
+// import ready from "./modules/utils/"
 // const guildMemberAdd = require("./modules/listeners/guildMemberAdd")
 import all_members from "./modules/utils/all_members";
 
@@ -31,6 +43,7 @@ const discord = require('discord.js')
 // import {promises as fs} from "fs";
 import {promises as fs} from "fs";
 import {log} from "util";
+import {strict} from "assert";
 
 // const mysql = require('mysql');
 // const {
@@ -133,29 +146,29 @@ let denesor = new discord.Client(/* config.json bot_settings */);
 
 // try { // for 로 이벤트 연결? -> ㄱㄱ
 
-    // let listener_list = {
-    //     "ready": () => {
-    //         console.log(`Logged in as ${denesor.user.tag}!`);
-    //         // 준비되면 채널에 인사하기
-    //     },
-    //     "guildMemberAdd": guildMemberAdd,
-    //     "guildMemberRemove": guildMemberRemove,
-    //     "message": require('./modules/listeners/message'),
-    //
-    // }
+// let listener_list = {
+//     "ready": () => {
+//         console.log(`Logged in as ${denesor.user.tag}!`);
+//         // 준비되면 채널에 인사하기
+//     },
+//     "guildMemberAdd": guildMemberAdd,
+//     "guildMemberRemove": guildMemberRemove,
+//     "message": require('./modules/listeners/message'),
+//
+// }
 
-    // listener_list.
+// listener_list.
 
 
-    // class Foo {
-    //
-    // }
-    //
-    // interface Object {
-    //     GetFoo(): Foo;
-    //
-    //     // GetFooAsString(): string;
-    // }
+// class Foo {
+//
+// }
+//
+// interface Object {
+//     GetFoo(): Foo;
+//
+//     // GetFooAsString(): string;
+// }
 
 //     This
 //     is
@@ -171,64 +184,97 @@ let denesor = new discord.Client(/* config.json bot_settings */);
 
 //This is ok.
 // Object.prototype.GetFooAsString = function () {
-    // return this.GetFoo().toString();
+// return this.GetFoo().toString();
 // }
 //     interface Images {
 //         main: string;
 //         [key:string]: string;
 //     }
 
-    // class aa
+// class aa
 
-    // function getMainImageUrl(images: Images): string {
-    //     return images.main;
-    // }
+// function getMainImageUrl(images: Images): string {
+//     return images.main;
+// }
 
-    // const aaa = new Image()
-    //
-    // getMainImageUrl(aaa)
-    //
-    // let a:any = {};
-    // //
-    // a.GetFoo()
+// const aaa = new Image()
+//
+// getMainImageUrl(aaa)
+//
+// let a:any = {};
+// //
+// a.GetFoo()
 
 // console.log("dkjdhffkjdf")
 
-    // console.log("aaaaaaaaaaaaaaa")
+// console.log("aaaaaaaaaaaaaaa")
 
-    // listener_list
+// listener_list
 
-    // for (const event_type in listener_list) {
-    //     denesor.on(event_type, listener_list[event_type])
-    // }
-    // denesor.on('ready', () => {
-    //     console.log(`Logged in as ${denesor.user.tag}!`);
-    //     // 준비되면 채널에 인사하기
-    // });
+// for (const event_type in listener_list) {
+//     denesor.on(event_type, listener_list[event_type])
+// }
+// denesor.on('ready', () => {
+//     console.log(`Logged in as ${denesor.user.tag}!`);
+//     // 준비되면 채널에 인사하기
+// });
 
-    // denesor.on('guildMemberAdd', guildMemberAdd)
-    // save 구문
+// denesor.on('guildMemberAdd', guildMemberAdd)
+// save 구문
 // denesor.on('message', onmessage2);
 //     denesor.on('message', require('./modules/listeners/message'))
 
-    // denesor.on('message', save)
-    // denesor.on('guildMemberAdd', )
-    // denesor.on('guildMemberRemove', guildMemberRemove)
+// denesor.on('message', save)
+// denesor.on('guildMemberAdd', )
+// denesor.on('guildMemberRemove', guildMemberRemove)
 
-    // interface Ilistener_list {
-    //     ready: Function
-    // }
+// interface Ilistener_list {
+//     ready: Function
+// }
+
+// denesor.guilds.cache.forEach(ele => console.log(ele.name))
+
 
 try { // for 로 이벤트 연결? -> ㄱㄱ
 
+    // let gsh: number | string | Function | Array<any> = "3fewefwwefwef"
+    //
+    // console.log(gsh)
+    //
+    // gsh = 5647654
+    //
+    // console.log(gsh)
 
-    let listener_list
+    // @ts-ignore
+    // let azsx: (...any?: Array<any>) => any
+    //
+    // azsx = () => {
+    //
+    // }
+    //
+    // azsx = (a: any) => {
+    //
+    // }
+    //
+    // azsx = function (a: any, b:any, asd?: any) {
+    //
+    // }
+    //
+    //
+    // @ts-ignore
+    // @ts-ignore
+    // @ts-ignore
+    interface Ilistener_list {
+        // @ts-ignore
+        [methodName: string]: ((...any?: Array<any>) => any) | Array<any>
+    }
+
+    // @ts-ignore
+    let listener_list: Ilistener_list
+    // let listener_list
 
     listener_list = {
-        "ready": () => {
-            console.log(`----------------------\nLogged in as ${denesor.user.tag}!`);
-            // 준비되면 채널에 인사하기
-        },
+        "ready": ready,
         "guildMemberAdd": guildMemberAdd,
         "guildMemberRemove": guildMemberRemove,
         "message": [
@@ -252,44 +298,53 @@ try { // for 로 이벤트 연결? -> ㄱㄱ
 
     // let a = ["a"
 
+    // @ts-ignore
+    // function listening(obj: any, event_type: string, lietener: (...any?: Array<any>) => any) {
+    //     obj.on(event_type, lietener)
+    // }
+    //
+    // function listening(obj: any, event_type: string, listener_list: Array<Function>) {
+    //     listener_list.forEach(listener => obj.on(event_type, listener))
+    // }
+
 
     let event_type: string;
     for (event_type in listener_list) {
-        if(listener_list[event_type] instanceof Array) listener_list[event_type].forEach(listener => denesor.on(event_type, listener))
+        if (listener_list[event_type] instanceof Array) (<Array<any>>listener_list[event_type]).forEach(listener => denesor.on(event_type, listener))
         else denesor.on(event_type, listener_list[event_type])
+        // listening(denesor, event_type, listener_list)
         console.log(`listening to ${event_type}`)
     }
-
 
 
 } catch (err) {
     console.error(err)
     throw "이벤트 리스닝 중 문제가 발생했습니다"
 }
-    // denesor.on('ready', () => {
-    //     console.log(`Logged in as ${denesor.user.tag}!`);
-        // 준비되면 채널에 인사하기
-    // });
-    // denesor.on('message', require('./modules/listeners/message'));
-    // denesor.on('guildMemberAdd', guildMemberAdd)
-    // save 구문
+// all_members(denesor.gu)
+
+// console.log("aaaaaaaaaa")
+// console.log(denesor.guilds.cache)
+
+
+// denesor.on('ready', () => {
+//     console.log(`Logged in as ${denesor.user.tag}!`);
+// 준비되면 채널에 인사하기
+// });
+// denesor.on('message', require('./modules/listeners/message'));
+// denesor.on('guildMemberAdd', guildMemberAdd)
+// save 구문
 // denesor.on('message', onmessage2);
 //     denesor.on('message', require('./modules/listeners/message'))
 //     denesor.on('message', save)
-    // denesor.on('guildMemberAdd', )
-    // denesor.on('guildMemberRemove', guildMemberRemove)
+// denesor.on('guildMemberAdd', )
+// denesor.on('guildMemberRemove', guildMemberRemove)
 
 
-
-
-
-
-    // console.log("a")
-    // console.log("a")
+// console.log("a")
+// console.log("a")
 
 // denesor.on('messageReactionAdd', messageReactionAdd1);
-
-
 
 
 // denesor.login(config.token);

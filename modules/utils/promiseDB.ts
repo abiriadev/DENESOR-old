@@ -41,7 +41,7 @@ const pool: mysql.Pool = mysql.createPool({
     // queueLimit: 0,
 })
 
-console.log("loged in %s", config.DB.name)
+console.log("MySQL: loged in %s", config.DB.name)
 
 // const result = async () => {
 //     const conn = await pool.getConnection()

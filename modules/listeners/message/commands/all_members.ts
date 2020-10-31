@@ -3,9 +3,9 @@ import {log} from "util";
 
 export {}
 // const Command = require('./Command')
-import Command from "./Command"
+import Command from "../../../classes/Command"
 import discord from "discord"
-import all_members1 from "../../utils/all_members";
+import all_members1 from "../../../utils/all_members";
 
 // let me =
 

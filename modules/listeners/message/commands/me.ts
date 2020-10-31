@@ -1,7 +1,7 @@
 // let me;
 export {}
 // const Command = require('./Command')
-import Command from "./Command"
+import Command from "../../../classes/Command"
 
 // let me =
 

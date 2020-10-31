@@ -1,3 +1,5 @@
+// import guilds from "./commands/guilds";
+
 export {}
 
 // import fs from "fs";
@@ -7,13 +9,13 @@ export {}
 // import Command from "./Command";
 
 
-import Command from "./Command"
+import Command from "../../classes/Command"
 
 import config from "./../../../settings/config.json"
-
-import me from "./me";
-import select_all from "./select_all"
-import all_members from "./all_members"
+import guilds from "./commands/guilds"
+import me from "./commands/me"
+import select_all from "./commands/select_all"
+import all_members from "./commands/all_members"
 // import select_all from "./select_all"
 
 try {
@@ -86,9 +88,13 @@ try {
                 console.log(`감지된 명령어: ${msg.content}`)
                 // console.log(msg.content)
 
-                if (asd(me)) me.action(msg);
+                if (asd(me)) me.action(msg)
                 else if(asd(select_all)) select_all.action(msg)
                 else if(asd(all_members)) all_members.action(msg)
+                else if(asd(guilds)) guilds.action(msg)
+
+
+
                 else msg.channel.send(`\'\`${msg.content}\`\' 존재하지 않는 명령어입니다`)
 
             } else {
