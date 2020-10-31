@@ -32,16 +32,16 @@ dotenv.config({
 
 const pool: mysql.Pool = mysql.createPool({
     // host: '',
-    host: config.DB_host,
-    user: config.DB_user,
+    host: config.DB.host,
+    user: config.DB.user,
     password: process.env.DBpassword,
-    database: config.DB_name,
+    database: config.DB.name,
     waitForConnections: true,
     // connectionLimit: 10,
     // queueLimit: 0,
 })
 
-console.log("loged in %s", config.DB_name)
+console.log("loged in %s", config.DB.name)
 
 // const result = async () => {
 //     const conn = await pool.getConnection()

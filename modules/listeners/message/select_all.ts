@@ -24,7 +24,7 @@ select_all = new Command(
                 // console.log(await re);
                 let re: any;
                 re = await DB.query('INSERT INTO test.table1 (id, point, if_attendance_check) VALUES (?, ?, ?)', [
-                    111633,
+                    1133,
                     5612,
                     true
                 ]);

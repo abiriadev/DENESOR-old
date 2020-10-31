@@ -13,6 +13,8 @@ import config from "./../../../settings/config.json"
 
 import me from "./me";
 import select_all from "./select_all"
+import all_members from "./all_members"
+// import select_all from "./select_all"
 
 try {
     try {
@@ -86,6 +88,7 @@ try {
 
                 if (asd(me)) me.action(msg);
                 else if(asd(select_all)) select_all.action(msg)
+                else if(asd(all_members)) all_members.action(msg)
                 else msg.channel.send(`\'\`${msg.content}\`\' 존재하지 않는 명령어입니다`)
 
             } else {

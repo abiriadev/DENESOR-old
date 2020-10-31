@@ -7,9 +7,12 @@
         "븽신",
         "망할"
     ],
-    "DB_name": "test",
-    "DB_user": "root",
-    "DB_host": "localhost",
+    "DB": {
+        "name": "test",
+        "user": "root",
+        "host": "localhost"
+
+    },
 
     "welcome_message": "%s님, 코딩 연구소에 오신 것을 환영합니다!",
     "welcome_channel_ID": 751056203299291196,
