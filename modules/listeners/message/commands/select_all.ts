@@ -23,15 +23,17 @@ select_all = new Command(
             (async () => {
                 // console.log(await re);
                 let re: any;
-                re = await DB.query('INSERT INTO test.table1 (id, point, if_attendance_check) VALUES (?, ?, ?)', [
-                    1133,
-                    5612,
-                    true
-                ]);
+                // re = await DB.query('INSERT INTO test.table1 (id, point, if_attendance_check) VALUES (?, ?, ?)', [
+                //     1133,
+                //     5612,
+                //     true
+                // ]);
 
-                console.log(re);
+                // console.log(re);
 
-                let qre = await DB.query('SELECT * FROM test.table1')
+                let qre = await DB.query('SELECT * FROM users')
+
+                if (qre == null) throw "DB에서 문제가 발생했습니다!"
 
                 console.log(qre);
 

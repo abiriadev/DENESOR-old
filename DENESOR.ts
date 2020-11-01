@@ -1,10 +1,10 @@
-declare const signalR: any;
-declare const moment: any;
-
-function listening(obj: any, event_type: string, lietener: Function) {
-    // @ts-ignore
-    obj.on(event_type, lietener)
-}
+// declare const signalR: any;
+// declare const moment: any;
+//
+// function listening(obj: any, event_type: string, lietener: Function) {
+//     @ts-ignore
+    // obj.on(event_type, lietener)
+// }
 
 // function listening(obj: any, event_type: string, listener_list: Array<Function>) {
 //     listener_list.forEach(listener => obj.on(event_type, listener))

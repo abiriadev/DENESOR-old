@@ -83,7 +83,7 @@ query = async (
         // pool.getConnecto
         try {
             /* Step 3. */
-            console.log("q_token: ", q_token)
+            // console.log("q_token: ", q_token)
 
             await connection.beginTransaction()
 
