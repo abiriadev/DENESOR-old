@@ -31,7 +31,14 @@ try {
         throw "패키지 로드 중 에러가 발생했습니다"
     }
 
-    let command_list = []
+    // let command_list = [
+    //     me,
+    //     select_all,
+    //     all_members,
+    //     guilds,
+    //     attendance_check,
+    //     find_member,
+    // ]
 
     let bot_out: Command;
     bot_out = new Command( //DM으로 올때만 / ! 으로 올때만
@@ -64,6 +71,17 @@ try {
         //DM으로 올때만 / ! 으로 올때만
     )
 
+
+
+    let command_list = [
+        me,
+        select_all,
+        all_members,
+        guilds,
+        attendance_check,
+        find_member,
+    ]
+
     // a = []
 
     module.exports = async msg => {
@@ -76,6 +94,12 @@ try {
 
         try {
             // 나중에 배열 ing
+            // 결국 지금 배열 ing
+
+            // command_list
+
+
+
             // let condition;
             const asd = command => {
                 return command.condition(msg)
@@ -90,16 +114,28 @@ try {
                 console.log(`감지된 명령어: ${msg.content}`)
                 // console.log(msg.content)
 
-                if (asd(me)) me.action(msg)
-                else if (asd(select_all)) select_all.action(msg)
-                else if (asd(all_members)) all_members.action(msg)
-                else if (asd(guilds)) guilds.action(msg)
-                else if (asd(attendance_check)) attendance_check.action(msg)
-                else if (asd(find_member)) find_member.action(msg)
+
+
+                const re: Command | undefined = command_list.find(command => {
+                    if (command.condition(msg)) {
+                        command.action(msg)
+                        return true
+                    }
+                })
 
 
 
-                else msg.channel.send(`\'\`${msg.content}\`\' 존재하지 않는 명령어입니다`)
+                //      if (asd(               me                  .action(msg)
+                // else if (asd(       select_all          .action(msg)
+                // else if (asd(      all_members         .action(msg)
+                // else if (asd(           guilds              .action(msg)
+                // else if (asd( attendance_check    .action(msg)
+                // else if (asd(      find_member         .action(msg)
+
+
+                // console.log(re)
+
+                if(!/*<undefined>*/re){ msg.channel.send(`\'\`${msg.content}\`\' 존재하지 않는 명령어입니다`)}
 
             } else {
                 //
