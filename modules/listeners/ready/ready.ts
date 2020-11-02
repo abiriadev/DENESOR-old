@@ -25,7 +25,9 @@ import denesor from "../../../DENESOR";
 
 import * as DB from "./../../utils/promiseDB"
 
-import all_members from "../../utils/all_members";
+import insert_new_user from "../../utils/insert_new_user";
+
+// import all_members from "../../utils/all_members";
 
 // let me;
 export {}
@@ -67,39 +69,43 @@ ready = () => {
             //
             // console.log(re);
 
-            let qre
+            let results
 
-            // qre = await DB.query('SELECT id FROM test.table1 WHERE id=43')
+            // results = await DB.query('SELECT id FROM test.table1 WHERE id=43')
             //
-            // console.log("43: ", qre[0]);
+            // console.log("43: ", results[0]);
             //
-            // if (qre[0][0]) console.log("43 is true")
+            // if (results[0][0]) console.log("43 is true")
             // else console.log("43 is false")
             //
-            // qre = await DB.query('SELECT id FROM test.table1 WHERE id=434')
+            // results = await DB.query('SELECT id FROM test.table1 WHERE id=434')
             //
-            // console.log("434: ", qre[0]);
+            // console.log("434: ", results[0]);
             //
-            // if (qre[0][0]) console.log("434 is true")
+            // if (results[0][0]) console.log("434 is true")
             // else console.log("434 is false")
 
-            qre = await DB.query('SELECT id FROM users WHERE id=?', [member.id])
+            results = await DB.query('SELECT id FROM users WHERE id=?', [member.id])
 
-            if (qre == null) throw "DB에서 문제가 발생했습니다!"
+            if (results == null) throw "DB에서 문제가 발생했습니다!"
 
-            if (qre[0][0]) {}// console.log(`${member.user.tag} 님은 이미 DB에 존재합니다!`)
+            if (results[0][0]) {}// console.log(`${member.user.tag} 님은 이미 DB에 존재합니다!`)
             else {
-                // console.log(`${member.user.tag} 님은 DB에 존재하지 않습니다!`)
+                console.log(`${member.user.tag} 님은 DB에 존재하지 않습니다!`)
 
-                re = await DB.query('INSERT INTO users (id, point, if_attendance_check) VALUES (?, ?, ?)', [
-                    member.id,
-                    0,
-                    false
-                ]);
+                // re = await DB.query('INSERT INTO users (id, point, if_attendance_check) VALUES (?, ?, ?)', [
+                //     member.id,
+                //     0,
+                //     false
+                // ]);
 
-                if (qre == null) throw "DB에서 문제가 발생했습니다!"
+                results = await insert_new_user(member.id)
 
-                // console.log(`${member.user.tag} 님을 성공적으로 DB에 추가했습니다!`)
+
+
+                if (results == null) throw "DB에서 문제가 발생했습니다!"
+
+                console.log(`${member.user.tag} 님을 성공적으로 DB에 추가했습니다!`)
 
             }
 

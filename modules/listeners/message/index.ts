@@ -1,6 +1,6 @@
 // import guilds from "./commands/guilds";
 
-export {}
+export { }
 
 // import fs from "fs";
 // import {
@@ -16,14 +16,16 @@ import guilds from "./commands/guilds"
 import me from "./commands/me"
 import select_all from "./commands/select_all"
 import all_members from "./commands/all_members"
+import find_member from "./commands/find_member";
+import attendance_check from "./commands/attendance_check"
 // import select_all from "./select_all"
 
 try {
     try {
-// const confi
-//         const discord = require('discord');
-// const config = require();
-//         const denesor = require("C:\\windowse\\trash box\\DashBoards\\Tools\\DENESOR\\settings\\denesor.json");
+        // const confi
+        //         const discord = require('discord');
+        // const config = require();
+        //         const denesor = require("C:\\windowse\\trash box\\DashBoards\\Tools\\DENESOR\\settings\\denesor.json");
     } catch (err) {
         console.error(err)
         throw "패키지 로드 중 에러가 발생했습니다"
@@ -89,9 +91,11 @@ try {
                 // console.log(msg.content)
 
                 if (asd(me)) me.action(msg)
-                else if(asd(select_all)) select_all.action(msg)
-                else if(asd(all_members)) all_members.action(msg)
-                else if(asd(guilds)) guilds.action(msg)
+                else if (asd(select_all)) select_all.action(msg)
+                else if (asd(all_members)) all_members.action(msg)
+                else if (asd(guilds)) guilds.action(msg)
+                else if (asd(attendance_check)) attendance_check.action(msg)
+                else if (asd(find_member)) find_member.action(msg)
 
 
 
@@ -125,7 +129,7 @@ try {
 //
 // import * as config from ".\\..\\..\\..\\settings\\config.json";
 
-import {promises as fs} from "fs";
+import { promises as fs } from "fs";
 
 // config = JSON.parse((async () => await fs.readFile(경로))())
 // const config = JSON.parse(
@@ -148,6 +152,6 @@ import {promises as fs} from "fs";
 // const config = JSON.parse(d.toString())
 // import config from ".\\..\\..\\..\\settings\\config.json";
 
-import {log} from "util";
+import { log } from "util";
 // ".\\..\\..\\..\\settings\\config.json"
 // export {}
