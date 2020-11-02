@@ -25,7 +25,51 @@ attendance_check = new Command(
 
                 //일단 사용자가 있는지나 확인
 
-                let q = "SELECT * FROM users WHERE id=?"
+                let results
+
+                // results = await DB.query('SELECT id FROM test.table1 WHERE id=43')
+                //
+                // console.log("43: ", results[0]);
+                //
+                // if (results[0][0]) console.log("43 is true")
+                // else console.log("43 is false")
+                //
+                // results = await DB.query('SELECT id FROM test.table1 WHERE id=434')
+                //
+                // console.log("434: ", results[0]);
+                //
+                // if (results[0][0]) console.log("434 is true")
+                // else console.log("434 is false")
+
+                results = await DB.query('SELECT id FROM users WHERE id=?', [msg.author.id])
+
+                if (results == null) throw "DB에서 문제가 발생했습니다!"
+
+                if (results[0][0]) {
+
+                }// console.log(`${member.user.tag} 님은 이미 DB에 존재합니다!`)
+                else {
+                    console.log(`${msg.author.user.tag} 님은 DB에 존재하지 않습니다!`)
+
+                    // re = await DB.query('INSERT INTO users (id, point, if_attendance_check) VALUES (?, ?, ?)', [
+                    //     member.id,
+                    //     0,
+                    //     false
+                    // ]);
+
+                    results = await insert_new_user(msg.author.id)
+
+
+
+                    if (results == null) throw "DB에서 문제가 발생했습니다!"
+
+                    console.log(`+ ${msg.author.user.tag} 님을 성공적으로 DB에 추가했습니다!`)
+
+                }
+
+                // let q = "SELECT * FROM users WHERE id=?"
+
+
 
                 // global.connection.query(q, [msg.author.id], (err, results, fields) => {
                 //     if (err) throw err;
@@ -44,7 +88,8 @@ attendance_check = new Command(
                 //     });
                 //
                 //     /* try {
-                //         await fs.writeFile("data\\user_list.json",
+                //         await fs.writeFile("data\\user_li
+                //         st.json",
                 //             JSON.stringify(user_list));
                 //     } catch (error) {
                 //         console.log(error);
@@ -57,43 +102,48 @@ attendance_check = new Command(
                 // }
                 // });
 
-                let results
+                // let results
 
-                results = await DB.query(q, [msg.author.id])
+                const q = "SELECT * FROM users WHERE id=?"
+
+
+                const results2 = await DB.query(q, [msg.author.id])
 
                 if (results == null) throw "DB에서 문제가 발생했습니다!"
 
-                console.log('The solution is2: ', results[0]);
+                console.dir('The solution is2: ', results[0][0]);
 
 
-                let results2
-                // 사용자가 DB에 없다면 -> DB에 추가
-                if (results[0][0]) {
-                    results2 = await insert_new_user(msg.author.id)
-
-                    results = await DB.query(q, [msg.author.id])
-
-                    if (results == null) throw "DB에서 문제가 발생했습니다!"
-
-                    console.log('The solution is2: ', results[0]);
-                }
+                // let results2
+                // // 사용자가 DB에 없다면 -> DB에 추가
+                // if (results[0][0]) {
+                //     results2 = await insert_new_user(msg.author.id)
+                //
+                //     results = await DB.query(q, [msg.author.id])
+                //
+                //     if (results == null) throw "DB에서 문제가 발생했습니다!"
+                //
+                //     console.log('The solution is2: ', results[0]);
+                // }
                 // results = await insert_new_user(member.id)
 
 
-                if (!(results[0][0].if_attendance_check)) {
+                if (!(results2[0][0].if_attendance_check)) {
                     msg.reply("출석하셨습니다!")
                     // user_list[msg.author.id] = true;
-                    let q = "UPDATE users SET if_attendance_check=? WHERE id=?"
+                    const q = "UPDATE users SET if_attendance_check=? WHERE id=?"
 
                     results = await DB.query(q, [true, msg.author.id])
                     // if (err) throw err;
-                    console.log('The solution is2: ', results);
+                    // console.log('The solution is2: ', results);
                     // msg.reply(JSON.stringify(results));
                     // });
 
                 } else {
                     msg.reply("이미 출석하셨어요!")
                 }
+
+                console.log("출석처리를 성공적으로 마쳤습니다!")
                 // }
                 // else
             } catch (err) {

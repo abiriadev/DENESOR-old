@@ -105,7 +105,7 @@ ready = () => {
 
                 if (results == null) throw "DB에서 문제가 발생했습니다!"
 
-                console.log(`${member.user.tag} 님을 성공적으로 DB에 추가했습니다!`)
+                console.log(`+ ${member.user.tag} 님을 성공적으로 DB에 추가했습니다!`)
 
             }
 

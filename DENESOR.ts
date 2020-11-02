@@ -242,6 +242,8 @@ try { // for 로 이벤트 연결? -> ㄱㄱ
     // console.log(gsh)
     //
     // gsh = 5647654
+
+    // denesor.
     //
     // console.log(gsh)
 
