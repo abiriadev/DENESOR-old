@@ -18,7 +18,7 @@ import insert_new_user from "./../../../utils/insert_new_user";
 let attendance_check: Command;
 attendance_check = new Command(
     {
-        condition: msg => msg.content == "출첵",
+        condition: async msg => msg.content == "출첵",
         action: async msg => {
             try {
                 // if (msg.content == "!출첵") {
@@ -152,7 +152,7 @@ attendance_check = new Command(
             }
         },
             // msg => { /* msg.channel.send("봇은 싫어요! 저리 가세요!") */
-            description: `important command`
+            description: `attendance check`
         }
 
     // {condition : msg => msg.content = "me", action : msg => msg.reply(`네, $msg.author 님!`), description : 'generel command'}

@@ -1,6 +1,6 @@
 // import guilds from "./commands/guilds";
 
-export { }
+export {}
 
 // import fs from "fs";
 // import {
@@ -18,6 +18,11 @@ import select_all from "./commands/select_all"
 import all_members from "./commands/all_members"
 import find_member from "./commands/find_member";
 import attendance_check from "./commands/attendance_check"
+
+import static_command from "./commands/static_command";
+import static_command2 from "./commands/static_command2";
+
+import default_command from "./commands/default_command";
 // import select_all from "./select_all"
 
 try {
@@ -72,7 +77,6 @@ try {
     )
 
 
-
     let command_list = [
         me,
         select_all,
@@ -80,11 +84,16 @@ try {
         guilds,
         attendance_check,
         find_member,
+        static_command,
+        static_command2,
+        default_command
     ]
 
     // a = []
 
     module.exports = async msg => {
+
+        // await
 
         if (msg.content == "!ㅋ") {
             msg.reply("ㅋㅋㅋ")
@@ -97,7 +106,6 @@ try {
             // 결국 지금 배열 ing
 
             // command_list
-
 
 
             // let condition;
@@ -115,14 +123,54 @@ try {
                 // console.log(msg.content)
 
 
+                // const re: Command | undefined = command_list.find(command => {
+                // const re: Command | undefined = command_list.(command => {
+                //         await
+                //
+                //         console.log(command)
+                //
+                //         if (await command.condition(msg)) {
+                //             await command.action(msg)
+                //             return true
+                //         }
+                //
+                //         // let a
+                //
+                //         a = (async () => {
+                //             let a
+                //             a = await command.condition(msg)
+                //             console.log(a)
+                //             return a
+                //         })()
+                //
+                //         console.log(`a: ${a}`)
+                //         return a
+                //
+                //         const a = await command.condition(msg)
+                //         console.log(a)
+                //         return a
+                //
+                //
+                //         // })()
+                //         if ((async () => await command.condition(msg))()) {
+                //             command.action(msg)
+                //             return true
+                //         }
+                //     }
 
-                const re: Command | undefined = command_list.find(command => {
-                    if (command.condition(msg)) {
-                        command.action(msg)
-                        return true
+
+// re
+
+                // )
+
+                for (const command of command_list) {
+                    if (await command.condition(msg)) {
+                        await command.action(msg)
+                        break
                     }
-                })
+                }
 
+                // console.log(`re: ${JSON.stringify(re)}`)
 
 
                 //      if (asd(               me                  .action(msg)
@@ -133,9 +181,13 @@ try {
                 // else if (asd(      find_member         .action(msg)
 
 
-                // console.log(re)
+                // console.log(`rs: ${JSON.stringify(re)}`)
 
-                if(!/*<undefined>*/re){ msg.channel.send(`\'\`${msg.content}\`\' 존재하지 않는 명령어입니다`)}
+                // if (!/*<undefined>*/re) {
+                //     msg.channel.send(`\'\`${msg.content}\`\' 존재하지 않는 명령어입니다`)
+                // } else {
+                //     await re.action(msg)
+                // }
 
             } else {
                 //
@@ -165,7 +217,7 @@ try {
 //
 // import * as config from ".\\..\\..\\..\\settings\\config.json";
 
-import { promises as fs } from "fs";
+import {promises as fs} from "fs";
 
 // config = JSON.parse((async () => await fs.readFile(경로))())
 // const config = JSON.parse(
@@ -188,6 +240,6 @@ import { promises as fs } from "fs";
 // const config = JSON.parse(d.toString())
 // import config from ".\\..\\..\\..\\settings\\config.json";
 
-import { log } from "util";
+import {log} from "util";
 // ".\\..\\..\\..\\settings\\config.json"
 // export {}

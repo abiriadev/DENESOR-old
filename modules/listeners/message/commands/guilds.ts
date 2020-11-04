@@ -13,8 +13,8 @@ import denesor from "../../../../DENESOR";
 let guilds: Command;
 guilds = new Command(
     {
-        condition: msg => msg.content == "guilds",
-        action: msg => {
+        condition: async msg => msg.content == "guilds",
+        action: async msg => {
 
             console.log(denesor.guilds.cache.forEach(guild => {
                 console.log("server: ", guild.name)

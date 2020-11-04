@@ -15,7 +15,7 @@ import all_members1 from "../../../utils/all_members";
 let all_members: Command;
 all_members = new Command(
     {
-        condition: msg => msg.content == "all_members",
+        condition: async msg => msg.content == "all_members",
         action: async msg => {
             // const tag =
             const cache: Array<discord.GuildMember | string> = await all_members1(msg.channel.guild)
@@ -25,7 +25,7 @@ all_members = new Command(
             // console.log(tag)
         },
         // msg => { /* msg.channel.send("봇은 싫어요! 저리 가세요!") */
-        description: `important command`
+        description: `find all members in server`
     }
     // {condition : msg => msg.content = "all_members", action : msg => msg.reply(`네, $msg.author 님!`), description : 'generel command'}
 );

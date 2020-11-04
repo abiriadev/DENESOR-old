@@ -16,8 +16,8 @@ import * as DB from "../../../utils/promiseDB";
 let select_all: Command;
 select_all = new Command(
     {
-        condition: msg => msg.content == "select_all",
-        action: msg => {
+        condition: async msg => msg.content == "select_all",
+        action: async msg => {
             // msg.reply(`네, ${msg.author.username} 님!`)
 
             (async () => {

@@ -11,8 +11,8 @@ import Command from "../../../classes/Command"
 let find_member: Command;
 find_member = new Command(
     {
-        condition: msg => msg.content.slice(0, 12) == "find_member ",
-        action: msg => {
+        condition: async msg => msg.content.slice(0, 12) == "find_member ",
+        action: async msg => {
             const id: string = msg.content.slice(12)
             console.log(`ID: ${id}`)
 
