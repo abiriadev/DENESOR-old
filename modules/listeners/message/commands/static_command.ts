@@ -2,7 +2,7 @@ import insert_new_user from "../../../utils/insert_new_user";
 
 export {}
 
-import static_command_json from "./../../../../settings/static_command.json"
+// import static_command_json from "./../../../../settings/static_command.json"
 // import config from "./../../../settings/config.json"
 
 // let static_command;
@@ -30,7 +30,7 @@ static_command = new Command(
 
                 const content_list = msg.content.split(/!/)
 
-                console.log(`명령어 생성 준비: [${content_list.toString()}]`)
+                // console.log(`명령어 생성 준비: [${content_list.toString()}]`)
 
                 // if (static_command_json[content_list[1]]) {
                 //     msg.channel.send(`\`'${content_list[1]}'\` 명령어는 이미 있어요!`)
@@ -43,14 +43,14 @@ static_command = new Command(
 
                 if (results == null) throw "DB에서 문제가 발생했습니다!"
 
-                console.log(`results: ${results}`);
+                // console.log(`results: ${results}`);
 
                 if (results[0][0]) {
                     msg.channel.send(`\`'${content_list[1]}'\` 명령어는 이미 있어요!`)
                     return
                 }// console.log(`${member.user.tag} 님은 이미 DB에 존재합니다!`)
                 else {
-                    console.log(`${content_list[1]} 명령어는 DB에 존재하지 않습니다!`)
+                    // console.log(`${content_list[1]} 명령어는 DB에 존재하지 않습니다!`)
                     // return
                     // re = await DB.query('INSERT INTO users (id, point, if_attendance_check) VALUES (?, ?, ?)', [
                     //     member.id,
@@ -94,7 +94,7 @@ static_command = new Command(
                         // return results
                     } catch (err) {
                         console.error(err)
-                        console.log("static_command 에서 INSERT INTO 중 에러 발생")
+                        // console.log("static_command 에서 INSERT INTO 중 에러 발생")
                         return null
                     }
 

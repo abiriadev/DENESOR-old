@@ -1,12 +1,12 @@
 // let me;
-import static_command from "./../../../../settings/static_command.json";
+// import static_command from "./../../../../settings/static_command.json";
 import * as DB from "../../../utils/promiseDB";
 
 export {}
 // const Command = require('./Command')
 import Command from "../../../classes/Command"
 
-import static_command_json from "../../../../settings/static_command.json"
+// import static_command_json from "../../../../settings/static_command.json"
 import {log} from "util";
 
 import fs from "fs/promises"
@@ -31,7 +31,7 @@ static_command2 = new Command(
 
             if (results == null) throw "DB에서 문제가 발생했습니다!"
 
-            console.log(`results: ${JSON.stringify(results[0][0])}`);
+            // console.log(`results: ${JSON.stringify(results[0][0])}`);
 
             if (results[0][0]) {
                 // msg.channel.send(`\`'${content_list[1]}'\` 명령어는 이미 있어요!`)
@@ -58,7 +58,7 @@ static_command2 = new Command(
 
             if (results == null) throw "DB에서 문제가 발생했습니다!"
 
-            console.log(`results: ${JSON.stringify(results[0][0])}`);
+            // console.log(`results: ${JSON.stringify(results[0][0])}`);
             msg.channel.send(results[0][0].answer)
 
 
