@@ -23,6 +23,7 @@ import static_command from "./commands/static_command";
 import static_command2 from "./commands/static_command2";
 
 import default_command from "./commands/default_command";
+import mun from "./commands/mun"
 // import select_all from "./select_all"
 
 try {
@@ -84,6 +85,7 @@ try {
         guilds,
         attendance_check,
         find_member,
+        mun,
         static_command,
         static_command2,
         default_command

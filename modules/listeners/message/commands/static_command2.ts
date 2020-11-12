@@ -59,7 +59,20 @@ static_command2 = new Command(
             if (results == null) throw "DB에서 문제가 발생했습니다!"
 
             // console.log(`results: ${JSON.stringify(results[0][0])}`);
-            msg.channel.send(results[0][0].answer)
+
+            let a = results[0][0].answer
+
+            if (a == "" || a == undefined)
+            {
+                msg.channel.send("`DiscordAPIError: Cannot send an empty message` 에러....")
+                msg.channel.send("수작부리지 마랏!")
+                msg.channel.send("return 0;")
+
+                return
+
+            }
+
+            msg.channel.send(a)
 
 
             // results[0][0].answer
