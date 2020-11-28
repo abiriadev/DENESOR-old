@@ -22,6 +22,8 @@ import attendance_check from "./commands/attendance_check"
 import static_command from "./commands/static_command";
 import static_command2 from "./commands/static_command2";
 
+import memberRandom from "./commands/memberRandom";
+
 import default_command from "./commands/default_command";
 import mun from "./commands/mun"
 // import select_all from "./select_all"
@@ -49,7 +51,8 @@ try {
     let bot_out: Command;
     bot_out = new Command( //DM으로 올때만 / ! 으로 올때만
         {
-            condition: msg => msg.author.bot, action: msg => { /* msg.channel.send("봇은 싫어요! 저리 가세요!") */
+            condition: msg => msg.author.bot, action: msg => {
+                /* msg.channel.send("봇은 싫어요! 저리 가세요!") */
             }, description: `important command`
         }
     )
@@ -86,6 +89,7 @@ try {
         attendance_check,
         find_member,
         mun,
+        memberRandom,
         static_command,
         static_command2,
         default_command
@@ -219,7 +223,7 @@ try {
 //
 // import * as config from ".\\..\\..\\..\\settings\\config.json";
 
-import {promises as fs} from "fs";
+// import {promises as fs} from "fs";
 
 // config = JSON.parse((async () => await fs.readFile(경로))())
 // const config = JSON.parse(
@@ -242,6 +246,6 @@ import {promises as fs} from "fs";
 // const config = JSON.parse(d.toString())
 // import config from ".\\..\\..\\..\\settings\\config.json";
 
-import {log} from "util";
+// import {log} from "util";
 // ".\\..\\..\\..\\settings\\config.json"
 // export {}

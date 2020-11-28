@@ -3,7 +3,7 @@ export {}
 // '--isolatedModules'
 import dotenv from "dotenv"
 import path from "path"
-import config from "./../settings/config.json"
+// import config from "./../settings/config.json"
 // import config from path.resolve(
 //     process.cwd(),
 //     "settings/config.json"
@@ -52,7 +52,7 @@ import client from "./../DENESOR"
 
 
 // client.login(config.token)
-client.login(process.env.token)
+client.login(process.env.TOKEN)
 // console.log(process.env.token)
 
 

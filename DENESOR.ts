@@ -10,7 +10,7 @@
 //     listener_list.forEach(listener => obj.on(event_type, listener))
 // }// node --trace-deprecation myscript build
 
-import {Interface} from "readline";
+// import {Interface} from "readline";
 
 export {}
 
@@ -24,12 +24,12 @@ import save from "./modules/listeners/message/save";
 
 // try {
 
-import config from "./settings/config.json";
+// import config from "./settings/config.json";
 import guildMemberAdd from "./modules/listeners/guildMemberAdd"
 import ready from "./modules/listeners/ready/ready";
 // import ready from "./modules/utils/"
 // const guildMemberAdd = require("./modules/listeners/guildMemberAdd")
-import all_members from "./modules/utils/all_members";
+// import all_members from "./modules/utils/all_members";
 
 import guildMemberRemove from "./modules/listeners/guildMemberRemove"
 // const denesor = require('./settings/denesor.json');
@@ -41,9 +41,9 @@ import guildMemberRemove from "./modules/listeners/guildMemberRemove"
 const discord = require('discord.js')
 
 // import {promises as fs} from "fs";
-import {promises as fs} from "fs";
-import {log} from "util";
-import {strict} from "assert";
+// import {promises as fs} from "fs";
+// import {log} from "util";
+// import {strict} from "assert";
 
 // const mysql = require('mysql');
 // const {
@@ -281,7 +281,7 @@ try { // for 로 이벤트 연결? -> ㄱㄱ
         "guildMemberRemove": guildMemberRemove,
         "message": [
             require("./modules/listeners/message"),
-            save
+            // save
         ]
 
     }
