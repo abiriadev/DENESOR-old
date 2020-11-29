@@ -52,7 +52,7 @@ import client from "./../DENESOR"
 
 
 // client.login(config.token)
-client.login(process.env.token)
+client.login(process.env.TOKEN)
 // console.log(process.env.token)
 
 
