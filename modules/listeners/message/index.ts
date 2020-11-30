@@ -22,7 +22,7 @@ import attendance_check from "./commands/attendance_check"
 import static_command from "./commands/static_command";
 import static_command2 from "./commands/static_command2";
 
-import memberRandom from "./commands/memberRandom";
+import memberRandom from "./commands/member_lottery";
 
 import default_command from "./commands/default_command";
 import mun from "./commands/mun"
