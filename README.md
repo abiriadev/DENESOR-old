@@ -1,2 +1,2 @@
 # DENESOR
-ver 0.5.0
+ver 0.6.0
