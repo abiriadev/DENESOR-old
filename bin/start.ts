@@ -312,26 +312,8 @@ import config from "./../settings/config.json";
 
 // const discord = require('discord.js');
 
-// const denesor = new discord.Client();
-// import client from "./../DENESOR"
 
-// module.exports = denesor;
-// console.log(process.env.NODE_ENV)
-// console.log(process.env.id)
 
-        // client.login(config.TOKEN)
-// client.login(process.env.TOKEN)
-// console.log(process.env.TOKEN)
-
-// <<<<<<< HEAD
-// // client.login(config.token)
-// client.login(process.env.TOKEN)
-// // console.log(process.env.token)
-// =======
-// // set NODE_ENV=devlopment
-// // set NODE_ENV=production
-// // }
-// >>>>>>> 4289b074be18ed96c5c416862eda1b398928cdd8
 
         const make_env_file_placeholder = (env_list: Array<any>): string => {
             let placeholder = "# 아래에 올바른 환경변수를 채워넣어 주세요\n"
@@ -362,13 +344,9 @@ import config from "./../settings/config.json";
         const env_file_path = path.join(envSettingFiles_path, env_file_name)
         await path_validation.path_validation(envSettingFiles_path)
 
-// <<<<<<< HEAD
 // // client.login(config.token)
 // client.login(process.env.TOKEN)
-// // console.log(process.env.token)
-// =======
         if (!await path_validation.check_path(env_file_path)) {
-// >>>>>>> small_updates
 
             await fs.writeFile(
                 env_file_path,
