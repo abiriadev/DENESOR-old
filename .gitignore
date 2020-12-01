@@ -1,0 +1,13 @@
+*.git
+#*.vscode
+#*.idea
+#*.gitignore
+#*.code-workspace
+/DENESOR.code-workspace
+
+/envSettingFiles
+
+/node_modules
+/memo
+/LOG
+/test

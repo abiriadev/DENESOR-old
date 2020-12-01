@@ -1,0 +1,26 @@
+{
+  "production": {
+    "filename": ".env",
+    "description": "production mode",
+    "env_var_list": {
+      "TOKEN": {
+        "description": "Discord bot token"
+      },
+      "DBpassword": {
+        "description": "database password"
+      }
+    }
+  },
+  "development": {
+    "filename": ".env.dev",
+    "description": "debug mode",
+    "env_var_list": {
+      "TOKEN": {
+        "description": "Discord bot token"
+      },
+      "DBpassword": {
+        "description": "database password"
+      }
+    }
+  }
+}
