@@ -1,6 +1,6 @@
 {
   "name": "denesor",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "project denesor",
   "scripts": {
     "test": "denesor.js",
