@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/import_client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/utils/path_validation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/utils/read_env_files.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings/env_settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/start.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bin/start.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/guildMemberAdd/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/guildMemberAdd/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/save.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/message/save.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/promiseDB.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/utils/promiseDB.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/settings/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/denesor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Abiria" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="randomGetMembersAccordingToRole" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
+  </component>
+  <component name="ProjectId" id="1kuTh0yXzYXMChlzawa34OHw6Ww" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DENESOR1" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\PC\WebstormProjects\DENESOR\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\WebstormProjects\DENESOR" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="" />
+      <created>1606549591723</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606549591723</updated>
+      <workItem from="1606549594068" duration="13407000" />
+      <workItem from="1606576754078" duration="9032000" />
+      <workItem from="1606663643768" duration="4202000" />
+      <workItem from="1606693727052" duration="2685000" />
+      <workItem from="1606749597907" duration="6907000" />
+      <workItem from="1606785335531" duration="3781000" />
+    </task>
+    <task id="LOCAL-00001" summary="add a command that randomly gets members according to role">
+      <created>1606593584333</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606593584333</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add function that change activity message">
+      <created>1606676004983</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606676004983</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add member_lottery function">
+      <created>1606759393965</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606759393965</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Minor version rise">
+      <created>1606759643625</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606759643625</updated>
+    </task>
+    <task id="LOCAL-00005" summary="patch activity function in ready.ts">
+      <created>1606789134340</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606789134340</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add a command that randomly gets members according to role" />
+    <MESSAGE value="add function that change activity message" />
+    <MESSAGE value="add member_lottery function" />
+    <MESSAGE value="Minor version rise" />
+    <MESSAGE value="patch activity function in ready.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="patch activity function in ready.ts" />
+  </component>
+</project>
