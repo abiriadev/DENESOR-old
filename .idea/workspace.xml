@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/DENESOR.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/import_client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/utils/path_validation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/utils/read_env_files.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings/env_settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DENESOR.ts" beforeDir="false" afterPath="$PROJECT_DIR$/DENESOR.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/start.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bin/start.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/guildMemberAdd/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/guildMemberAdd/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/guilds.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/message/commands/guilds.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/save.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/message/save.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/ready/ready.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/ready/ready.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/promiseDB.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/utils/promiseDB.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/settings/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/denesor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="small_updates" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="small_updates" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
