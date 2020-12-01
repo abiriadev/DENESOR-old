@@ -319,9 +319,15 @@ import config from "./../settings/config.json";
 // client.login(process.env.TOKEN)
 // console.log(process.env.TOKEN)
 
-// set NODE_ENV=devlopment
-// set NODE_ENV=production
-// }
+// <<<<<<< small_updates
+// // client.login(config.token)
+// client.login(process.env.TOKEN)
+// // console.log(process.env.token)
+// =======
+// // set NODE_ENV=devlopment
+// // set NODE_ENV=production
+// // }
+// >>>>>>> master
 
         const make_env_file_placeholder = (env_list: Array<any>): string => {
             let placeholder = "# 아래에 올바른 환경변수를 채워넣어 주세요\n"

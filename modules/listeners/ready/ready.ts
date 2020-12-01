@@ -39,17 +39,57 @@ export {}
 // class Command {
 // }
 
+const all_members = async (guild: any): Promise<Array<any>> => (await guild.members.fetch()).array()
+
 let ready: () => void
-ready = () => {
+ready = async () => {
     console.log(`----------------------\nLogged in as ${denesor.user.tag}!`);
     // 준비되면 채널에 인사하기
+
+    let server_membercount: number = denesor.guilds.cache.array()[0].memberCount
+
+    setInterval(async () => {
+            server_membercount = denesor.guilds.cache.array()[0].memberCount
+        },
+        360000)
+
+    const activity_list: Array<string> = [
+        "단 하나의 서버에서 최대의 성능 발휘 중",
+        "늘 그렇듯 시끄러운 코딩연구소 https://discord.gg/CM2x5WVe9k",
+        `${denesor.guilds.cache.array().length} 개의 서버와 함꼐`,
+        `${server_membercount} 명의 이용자와 함꼐`,
+        "독재 하는 중",
+        "[DENESOR]",
+    ]
+
+    denesor.user.setActivity(
+        activity_list[0],
+        {
+            type: 'PLAYING'
+        })
+    // .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
+    // .catch(console.error);
+
+    let i = 0
+    setInterval(() => {
+        i++
+        if (i == activity_list.length) i = 0
+
+        denesor.user.setActivity(activity_list[i], {type: 'PLAYING'})
+            .then(presence => {/* console.log(`Activity set to ${presence.activities[0].name}`) */
+            })
+            .catch(console.error);
+    }, 4500)
+
+    denesor.user.setStatus('idle')
+        // .then(console.log)
+        .catch(console.error);
 
     denesor.guilds.cache.forEach(guild => {
         let guild_count = 0
         console.log(`${guild_count} server: `, guild.name)
 
         let members = guild.members.cache
-
 
         let c = 0
 
@@ -89,7 +129,8 @@ ready = () => {
 
             if (results == null) throw "DB에서 문제가 발생했습니다!"
 
-            if (results[0][0]) {}// console.log(`${member.user.tag} 님은 이미 DB에 존재합니다!`)
+            if (results[0][0]) {
+            }// console.log(`${member.user.tag} 님은 이미 DB에 존재합니다!`)
             else {
                 console.log(`${member.user.tag} 님은 DB에 존재하지 않습니다!`)
 
@@ -102,14 +143,11 @@ ready = () => {
                 results = await insert_new_user(member.id)
 
 
-
                 if (results == null) throw "DB에서 문제가 발생했습니다!"
 
                 console.log(`+ ${member.user.tag} 님을 성공적으로 DB에 추가했습니다!`)
 
             }
-
-
 
 
             // })()
@@ -120,7 +158,7 @@ ready = () => {
             // console.log(`${c} member.id: ${member.id} \t user.id: ${member.user.id} => ${member.id == member.user.id}`)
         })
 
-        console.log("member count: %s", c)
+        console.log("member count: %s", server_membercount)
 
 
         console.log("----------------------")

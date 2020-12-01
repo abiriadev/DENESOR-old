@@ -1,3 +1,5 @@
+
+
 // declare const signalR: any;
 // declare const moment: any;
 //
@@ -281,7 +283,7 @@ try { // for 로 이벤트 연결? -> ㄱㄱ
         "guildMemberRemove": guildMemberRemove,
         "message": [
             require("./modules/listeners/message"),
-            save
+            // save
         ]
 
     }

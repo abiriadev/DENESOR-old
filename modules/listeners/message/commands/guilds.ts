@@ -10,6 +10,8 @@ import denesor from "../../../../DENESOR";
 // class Command {
 // }
 
+const all_members = async (guild: any): Promise<Array<any>> => (await guild.members.fetch()).array()
+
 let guilds: Command;
 guilds = new Command(
     {
