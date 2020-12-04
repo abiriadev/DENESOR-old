@@ -4,6 +4,7 @@
     <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +102,8 @@
       <updated>1607057322895</updated>
       <workItem from="1607057324379" duration="249000" />
       <workItem from="1607057605408" duration="2467000" />
-      <workItem from="1607102801637" duration="4709000" />
+      <workItem from="1607102801637" duration="4793000" />
+      <workItem from="1607110587400" duration="189000" />
     </task>
     <task id="LOCAL-00001" summary="for hosting">
       <created>1607106739843</created>
@@ -117,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607107302060</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="for hosting 3">
+      <created>1607109818333</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607109818333</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +175,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="for hosting" />
     <MESSAGE value="for hosting 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="for hosting 2" />
+    <MESSAGE value="for hosting 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="for hosting 3" />
   </component>
 </project>
