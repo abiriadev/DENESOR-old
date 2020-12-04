@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="for hosting 5">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/start.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/start.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bin/start.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/static_command.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/message/commands/static_command.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/static_command2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/message/commands/static_command2.ts" afterDir="false" />
+    <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +101,7 @@
       <workItem from="1607057324379" duration="249000" />
       <workItem from="1607057605408" duration="2467000" />
       <workItem from="1607102801637" duration="4793000" />
-      <workItem from="1607110587400" duration="1102000" />
+      <workItem from="1607110587400" duration="1379000" />
     </task>
     <task id="LOCAL-00001" summary="for hosting">
       <created>1607106739843</created>
@@ -143,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607111077890</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="for hosting 6">
+      <created>1607111724554</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607111724554</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +197,7 @@
     <MESSAGE value="for hosting 3" />
     <MESSAGE value="for hosting 4" />
     <MESSAGE value="for hosting 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="for hosting 5" />
+    <MESSAGE value="for hosting 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="for hosting 6" />
   </component>
 </project>
