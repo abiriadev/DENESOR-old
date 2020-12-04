@@ -12,6 +12,15 @@ message_filter = new Command(
             config.bad_word_list.forEach(word => {
                 if (msg.content.match(new RegExp(word, 'i'))) return a = 1
             })
+
+            if (msg.channel.id != 760415942395691020) {
+
+                if (msg.content.match(/^ㄷ+$/gm)) {
+                    msg.delete()
+
+                    msg.reply(`규칙에 따라 '주요 채널에서의 답변을 위하지 않는 의미없는 채팅(쓸모없이 진정한 답변 여부와는 상관없이 본인 기분대로 쓰는 경우) 또는 도배나 물타기를 유도할 수 있는 단어 또는 좋지 않은 어휘의 말로 판단되어 삭제합니다.`)
+                }
+            }
             // return a
 
             const channel = msg.channel
@@ -45,6 +54,7 @@ message_filter = new Command(
                     }
 
                     break;
+
                 default:
                     break;
 

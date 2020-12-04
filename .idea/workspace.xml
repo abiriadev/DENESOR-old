@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/filter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/listeners/message/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/message/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/message/commands/filter.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
