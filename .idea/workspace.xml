@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/clear.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/filter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/listeners/message/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/message/index.ts" afterDir="false" />
     </list>
@@ -30,7 +29,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="small_updates" />
+        <entry key="$PROJECT_DIR$" value="clear" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,6 +55,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\PC\WebstormProjects\DENESOR\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -87,9 +87,16 @@
       <workItem from="1606866895440" duration="3966000" />
       <workItem from="1606889064269" duration="1016000" />
       <workItem from="1606953286429" duration="1191000" />
-      <workItem from="1607041079348" duration="1190000" />
+      <workItem from="1607041079348" duration="4345000" />
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add function that clear messages">
+      <created>1607044280828</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607044280828</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +116,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="miner version rise&#10;&#10;Committed to saving the event that merges of the three branches" />
-    <option name="LAST_COMMIT_MESSAGE" value="miner version rise&#10;&#10;Committed to saving the event that merges of the three branches" />
+    <MESSAGE value="add function that clear messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="add function that clear messages" />
   </component>
 </project>
