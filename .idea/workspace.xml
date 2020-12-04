@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/message/commands/filter.ts" afterDir="false" />
-    </list>
+    <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +84,7 @@
       <workItem from="1606889064269" duration="1016000" />
       <workItem from="1606953286429" duration="1191000" />
       <workItem from="1607041079348" duration="4345000" />
-      <workItem from="1607098907085" duration="652000" />
+      <workItem from="1607098907085" duration="1014000" />
     </task>
     <task id="LOCAL-00002" summary="add function that clear messages">
       <created>1607044280828</created>
@@ -103,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607049858896</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add function that cencer the 'ㄷ' chatting 2">
+      <created>1607099792303</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607099792303</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +129,7 @@
     <MESSAGE value="miner version rise&#10;&#10;Committed to saving the event that merges of the three branches" />
     <MESSAGE value="add function that clear messages" />
     <MESSAGE value="add function that cencer the 'ㄷ' chatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="add function that cencer the 'ㄷ' chatting" />
+    <MESSAGE value="add function that cencer the 'ㄷ' chatting 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add function that cencer the 'ㄷ' chatting 2" />
   </component>
 </project>
