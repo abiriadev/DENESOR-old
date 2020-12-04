@@ -26,6 +26,7 @@
     "discord": "^0.8.2",
     "discord.js": "^12.3.1",
     "dotenv": "^8.2.0",
+    "fs": "^0.0.1-security",
     "google-translate-api": "^2.3.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
@@ -35,6 +36,7 @@
     "typescript": "^4.0.3"
   },
   "devDependencies": {
+    "@types/node": "^14.14.2",
     "forever": "^3.0.4",
     "ts-node": "^9.0.0",
     "tslint": "^6.1.3"

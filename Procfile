@@ -1,1 +1,1 @@
-worker: npm i @pm2/pm2-version-check && cross-env NODE_ENV=withoutDB pm2 start ./bin/start.js --name "DENESOR" -i 1 && pm2 log
+worker: npm i @pm2/pm2-version-check && cross-env NODE_ENV=withoutDB pm2 start ts-node ./bin/start.ts --name "DENESOR" -i 1 && pm2 log
