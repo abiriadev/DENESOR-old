@@ -1,1 +1,1 @@
-worker: node bot.js
+worker: pm2 install typescript && cross-env NODE_ENV=withoutDB pm2 start 'ts-node ./bin/start.ts' --name "DENESOR" -o ./api.log -e ./api.log --merge-logs  -i 0

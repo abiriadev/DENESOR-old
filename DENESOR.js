@@ -220,11 +220,17 @@ try { // for 로 이벤트 연결? -> ㄱㄱ
         // listening(denesor, event_type, listener_list)
         console.log("listening to " + event_type_1);
     }
+    // console.log(`argv: ${process.env.argv}`)
 }
 catch (err) {
     console.error(err);
     throw "이벤트 리스닝 중 문제가 발생했습니다";
 }
+// setInterval(() => {
+//  throw "이이이잉ㅇ잉이이ㅣ"
+// }, 10000)
+//
+// console.log("로급좀!!!!")
 // all_members(denesor.gu)
 // console.log("aaaaaaaaaa")
 // console.log(denesor.guilds.cache)

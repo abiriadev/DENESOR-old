@@ -313,8 +313,6 @@ import config from "./../settings/config.json";
 // const discord = require('discord.js');
 
 
-
-
         const make_env_file_placeholder = (env_list: Array<any>): string => {
             let placeholder = "# 아래에 올바른 환경변수를 채워넣어 주세요\n"
 
@@ -339,43 +337,45 @@ import config from "./../settings/config.json";
             process.exit(1)
         }
 
-        const env_file_name = env_settings_list.filename
-        const envSettingFiles_path: string = config.envSettingFiles
-        const env_file_path = path.join(envSettingFiles_path, env_file_name)
-        await path_validation.path_validation(envSettingFiles_path)
+        if(process.env.NODE_ENV == "withoutDB") {
+
+        } else {
+
+            const env_file_name = env_settings_list.filename
+            const envSettingFiles_path: string = config.envSettingFiles
+            const env_file_path = path.join(envSettingFiles_path, env_file_name)
+            await path_validation.path_validation(envSettingFiles_path)
 
 // // client.login(config.token)
 // client.login(process.env.TOKEN)
-        if (!await path_validation.check_path(env_file_path)) {
+            if (!await path_validation.check_path(env_file_path)) {
 
-            await fs.writeFile(
-                env_file_path,
-                make_env_file_placeholder(env_settings_list.env_var_list)
-            )
-
-            await fs.appendFile(path.join(process.cwd() + '/.gitignore'), `/${env_file_path}`)
-            console.log(`${env_file_path} 에 생성된 파일에 올바른 값을 입력하고 다시 실행해 주세요!`)
-
-            process.exit(1)
-        }
-
-        dotenv.config({
-                path: path.resolve(
-                    process.cwd(), env_file_path
+                await fs.writeFile(
+                    env_file_path,
+                    make_env_file_placeholder(env_settings_list.env_var_list)
                 )
-            }
-        )
 
-        for (let env_ver_name in env_settings_list.env_var_list) {
-            if (!process.env[env_ver_name]) {
-                console.log(`환경변수 '${env_ver_name}'가 할당되지 않았습니다`)
+                await fs.appendFile(path.join(process.cwd() + '/.gitignore'), `/${env_file_path}`)
+                console.log(`${env_file_path} 에 생성된 파일에 올바른 값을 입력하고 다시 실행해 주세요!`)
+
                 process.exit(1)
             }
-        }
 
-        {
+            dotenv.config({
+                    path: path.resolve(
+                        process.cwd(), env_file_path
+                    )
+                }
+            )
 
-            // LOG 경로처리
+            for (let env_ver_name in env_settings_list.env_var_list) {
+                if (!process.env[env_ver_name]) {
+                    console.log(`환경변수 '${env_ver_name}'가 할당되지 않았습니다`)
+                    process.exit(1)
+                }
+            }
+
+            // LOG 경로처리 (원래는 안쪽)
             await path_validation.path_validation(config.LOGpath.dir_path)
             let logfile_path = path.join(config.LOGpath.dir_path, config.LOGpath.file_name)
             if (!await path_validation.check_path(logfile_path)) await fs.writeFile(
@@ -383,9 +383,23 @@ import config from "./../settings/config.json";
                 ""
             )
 
+        }
+
+        {
+
+
+
             const client = require("./import_client")
 
             client.login(process.env.TOKEN)
+            // client.login()
+
+
+            // console.log(`argv: ${process.env.argv}`)
+
+            setInterval(() => {
+                throw "이이이잉ㅇ잉이이ㅣ"
+            }, 10000)
 
         }
 

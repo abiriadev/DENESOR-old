@@ -2,45 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Aptfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DENESOR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LOG/message_data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/import_client.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/start.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecosystem.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/classes/Command.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/listeners/guildMemberAdd/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/listeners/guildMemberRemove/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/all_members.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/attendance_check.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/default_command.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/find_member.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/guilds.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/me.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/member_lottery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/mun.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/select_all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/static_command.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/static_command2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/listeners/message/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/listeners/message/save.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/listeners/ready/ready.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/utils/all_members.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/utils/insert_new_user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/utils/path_validation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/utils/promiseDB.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/utils/read_env_files.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DENESOR.js" beforeDir="false" afterPath="$PROJECT_DIR$/DENESOR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DENESOR.ts" beforeDir="false" afterPath="$PROJECT_DIR$/DENESOR.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/static_command2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/message/commands/static_command2.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/listeners/ready/ready.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/ready/ready.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/utils/promiseDB.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/utils/promiseDB.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/start.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/start.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bin/start.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings/env_settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/settings/env_settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,22 +50,32 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/package.json" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../trash box/DashBoards/Discord/DENESOR" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Users\Administrator\WebstormProjects\DENESOR\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\PC\WebstormProjects\DENESOR\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="npm.hosting">
+  <component name="RunManager" selected="npm.hosting2">
     <configuration name="hosting" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="hosting" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="hosting2" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="hosting2" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -110,6 +92,7 @@
     <list>
       <item itemvalue="npm.start" />
       <item itemvalue="npm.hosting" />
+      <item itemvalue="npm.hosting2" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -122,6 +105,7 @@
       <updated>1607057322895</updated>
       <workItem from="1607057324379" duration="249000" />
       <workItem from="1607057605408" duration="2467000" />
+      <workItem from="1607102801637" duration="1855000" />
     </task>
     <servers />
   </component>
