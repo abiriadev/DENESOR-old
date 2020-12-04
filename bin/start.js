@@ -326,9 +326,9 @@ var config_json_1 = __importDefault(require("./../settings/config.json"));
                     // client.login(process.env.TOKEN)
                     client.login("NzUwNjEwODg4OTIyMzY2MDMz.X09C3Q.tBeKLiZCTopUpOSDbAmksg1oixo");
                     // console.log(`argv: ${process.env.argv}`)
-                    setInterval(function () {
-                        throw "이이이잉ㅇ잉이이ㅣ";
-                    }, 10000);
+                    // setInterval(() => {
+                    //     throw "이이이잉ㅇ잉이이ㅣ"
+                    // }, 10000)
                 }
                 return [3 /*break*/, 13];
             case 12:

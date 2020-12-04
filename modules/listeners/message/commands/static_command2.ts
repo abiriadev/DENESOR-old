@@ -45,7 +45,9 @@ static_command2 = new Command(
                 }
 
             } else {
-                msg.channel.send("현재 기능이 비활성화되어 있습니다!")
+                // msg.channel.send("현재 기능이 비활성화되어 있습니다!")
+
+                return false
             }
 
 

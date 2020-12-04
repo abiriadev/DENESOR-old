@@ -28,6 +28,11 @@ static_command = new Command(
 
                 // console.log(`명령어 추가json: ${static_command.toString()}`)
 
+                if (process.env.NODE_ENV == "withoutDB") {
+                    msg.send("현재 기능이 비활성화 되어있습니다!")
+                    return 0
+                }
+
                 const content_list = msg.content.split(/!/)
 
                 // console.log(`명령어 생성 준비: [${content_list.toString()}]`)

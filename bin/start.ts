@@ -392,14 +392,14 @@ import config from "./../settings/config.json";
             const client = require("./import_client")
 
             client.login(process.env.TOKEN)
-            // client.login()
+            // client.login("")
 
 
             // console.log(`argv: ${process.env.argv}`)
 
-            setInterval(() => {
-                throw "이이이잉ㅇ잉이이ㅣ"
-            }, 10000)
+            // setInterval(() => {
+            //     throw "이이이잉ㅇ잉이이ㅣ"
+            // }, 10000)
 
         }
 
