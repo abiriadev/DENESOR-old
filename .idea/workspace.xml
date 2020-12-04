@@ -2,15 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aptfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DENESOR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LOG/message_data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/import_client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/start.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecosystem.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/classes/Command.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/guildMemberAdd/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/guildMemberRemove/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/all_members.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/attendance_check.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/default_command.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/find_member.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/guilds.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/me.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/member_lottery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/mun.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/select_all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/static_command.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/message/commands/static_command2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/message/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/message/save.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/listeners/ready/ready.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/utils/all_members.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/utils/insert_new_user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/utils/path_validation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/utils/promiseDB.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/utils/read_env_files.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/static_command2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/message/commands/static_command2.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/ready/ready.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/ready/ready.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/promiseDB.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/utils/promiseDB.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/env_settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/settings/env_settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="small_updates" />
@@ -18,7 +60,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="small_updates" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,13 +68,37 @@
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="1" />
   </component>
+  <component name="ProjectId" id="1lB4o9kPOj1Sazp9GOs5RAF0JoO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/package.json" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/package.json" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\Administrator\WebstormProjects\DENESOR\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="npm.hosting">
+    <configuration name="hosting" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="hosting" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="start" />
@@ -41,9 +107,55 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.start" />
+      <item itemvalue="npm.hosting" />
+    </list>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="" />
+      <created>1607057322895</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607057322895</updated>
+      <workItem from="1607057324379" duration="249000" />
+      <workItem from="1607057605408" duration="2467000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/DENESOR.js" />
+        <option value="$PROJECT_DIR$/bin/start.js" />
+        <option value="$PROJECT_DIR$/bin/import_client.js" />
+        <option value="$PROJECT_DIR$/modules/utils/read_env_files.js" />
+        <option value="$PROJECT_DIR$/modules/utils/promiseDB.js" />
+        <option value="$PROJECT_DIR$/modules/utils/all_members.js" />
+        <option value="$PROJECT_DIR$/modules/utils/path_validation.js" />
+        <option value="$PROJECT_DIR$/modules/utils/insert_new_user.js" />
+        <option value="$PROJECT_DIR$/modules/classes/Command.js" />
+        <option value="$PROJECT_DIR$/modules/listeners/ready/ready.js" />
+        <option value="$PROJECT_DIR$/modules/listeners/message/index.js" />
+        <option value="$PROJECT_DIR$/modules/listeners/message/save.js" />
+        <option value="$PROJECT_DIR$/modules/listeners/guildMemberAdd/index.js" />
+        <option value="$PROJECT_DIR$/modules/listeners/guildMemberRemove/index.js" />
+        <option value="$PROJECT_DIR$/modules/listeners/message/commands/guilds.js" />
+        <option value="$PROJECT_DIR$/modules/listeners/message/commands/attendance_check.js" />
+        <option value="$PROJECT_DIR$/modules/listeners/message/commands/find_member.js" />
+        <option value="$PROJECT_DIR$/modules/listeners/message/commands/me.js" />
+        <option value="$PROJECT_DIR$/modules/listeners/message/commands/mun.js" />
+        <option value="$PROJECT_DIR$/modules/listeners/message/commands/select_all.js" />
+        <option value="$PROJECT_DIR$/modules/listeners/message/commands/static_command2.js" />
+        <option value="$PROJECT_DIR$/modules/listeners/message/commands/member_lottery.js" />
+        <option value="$PROJECT_DIR$/modules/listeners/message/commands/all_members.js" />
+        <option value="$PROJECT_DIR$/modules/listeners/message/commands/default_command.js" />
+        <option value="$PROJECT_DIR$/modules/listeners/message/commands/static_command.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

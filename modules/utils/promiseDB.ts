@@ -54,9 +54,13 @@ import client from "../../DENESOR";
 //     console.log("환경 변수 로드 중 에러가 발생했습니다!")
 // }
 
-(async () => {
+let query: any;
 
-        // try {
+if (process.env.NODE_ENV != "withoutDB") {
+
+    (async () => {
+
+            // try {
 
             // dotenv.config({
             //         path: path.resolve(
@@ -168,9 +172,9 @@ import client from "../../DENESOR";
 
             // 이제부터 하고 싶었던 작업 하면 돼!
             // {
-                // import client from "./../DENESOR"
+            // import client from "./../DENESOR"
 
-                // client.login(process.env.TOKEN)
+            // client.login(process.env.TOKEN)
 
             // }
 
@@ -206,46 +210,46 @@ import client from "../../DENESOR";
             //     path: env_file_path
             // })
 
-        // } catch (err) {
-        //     console.error(err)
-        //     console.log(`ERRPR에러 설명: ${JSON.stringify(err)}`)
-        //
-        //     console.log("환경 변수 로드 중 에러가 발생했습니다!")
-        //
-        //     if (err.code == "ERR_INVALID_ARG_TYPE") {
-        //         console.log(`process.env.NODE_ENV 는 '${process.env.NODE_ENV}' 일 수 없습니다.`)
-        //         console.log(`recommended '${Object.keys(env_path_options)[0]}' to run production mode`)
-        //         process.exit(1)
-        //     }
-        //
-        //     process.exit(1)
-        //
-        //     // console.log(process.env.TOKEN)
-        //
-        //     // console.log("환경 변수 로드 중 에러가 발생했습니다!")
-        //     // throw err
-        //
-        // }
-    }
-)()
+            // } catch (err) {
+            //     console.error(err)
+            //     console.log(`ERRPR에러 설명: ${JSON.stringify(err)}`)
+            //
+            //     console.log("환경 변수 로드 중 에러가 발생했습니다!")
+            //
+            //     if (err.code == "ERR_INVALID_ARG_TYPE") {
+            //         console.log(`process.env.NODE_ENV 는 '${process.env.NODE_ENV}' 일 수 없습니다.`)
+            //         console.log(`recommended '${Object.keys(env_path_options)[0]}' to run production mode`)
+            //         process.exit(1)
+            //     }
+            //
+            //     process.exit(1)
+            //
+            //     // console.log(process.env.TOKEN)
+            //
+            //     // console.log("환경 변수 로드 중 에러가 발생했습니다!")
+            //     // throw err
+            //
+            // }
+        }
+    )()
 
 
 // console.log(config.DB_user)
 // console.log(config.DB_name)
 // console.log(process.env.DBpassword)
 
-const pool: mysql.Pool = mysql.createPool({
-    // host: '',
-    host: config.DB.host,
-    user: config.DB.user,
-    password: process.env.DBpassword,
-    database: config.DB.name,
-    waitForConnections: true,
-    // connectionLimit: 10,
-    // queueLimit: 0,
-})
+    const pool: mysql.Pool = mysql.createPool({
+        // host: '',
+        host: config.DB.host,
+        user: config.DB.user,
+        password: process.env.DBpassword,
+        database: config.DB.name,
+        waitForConnections: true,
+        // connectionLimit: 10,
+        // queueLimit: 0,
+    })
 
-console.log("MySQL: loged in %s", config.DB.name)
+    console.log("MySQL: loged in %s", config.DB.name)
 
 // const result = async () => {
 //     const conn = await pool.getConnection()
@@ -262,98 +266,94 @@ console.log("MySQL: loged in %s", config.DB.name)
 
 // pool.query('DESCRIBE ')
 
-let query: (
-    q: string,
-    q_token?: (Array<
-        string |
-        number |
-        boolean
-    > | undefined)
-) => Promise<any>
+    let query: (
+        q: string,
+        q_token?: (Array<string |
+            number |
+            boolean> | undefined)
+    ) => Promise<any>
 
-query = async (
-    q: string,
-    q_token: Array<
-    string |
-    number |
-    boolean
-> | undefined = undefined) => {
-    try {
-        const connection: mysql.PoolConnection = await pool.getConnection()
-        // const connection = await pool.getConnection()
-
-        // const [rows, fields] = await connection.execute(q)
-
-        // pool.getConnecto
+    query = async (
+        q: string,
+        q_token: Array<string |
+            number |
+            boolean> | undefined = undefined) => {
         try {
-            /* Step 3. */
-            // console.log("q_token: ", q_token)
+            const connection: mysql.PoolConnection = await pool.getConnection()
+            // const connection = await pool.getConnection()
 
-            await connection.beginTransaction()
+            // const [rows, fields] = await connection.execute(q)
 
-            // if (q_token) {
-            //     console.log("1 실행! (q_token 사용됨)")
-            //     const [rows, fields] = await connection.execute(q, q_token)
-            //     // const [rows] = await connection.query(q. q_token)
-            //     // const [rows] = await connection.query(q, q_token)
-            //     return [rows, fields]
-            // } else {
-            //     console.log("2 실행! (q_token 미사용됨)")
-            //     const [rows, fields] = await connection.execute(q)
-            //     // const [rows] = await connection.query(q)
-            //     return [rows, fields]
-            // }
+            // pool.getConnecto
+            try {
+                /* Step 3. */
+                // console.log("q_token: ", q_token)
 
-            // let rows: mysql.RowDataPacket[] | mysql.RowDataPacket[][] | mysql.OkPacket | mysql.OkPacket[]
+                await connection.beginTransaction()
 
+                // if (q_token) {
+                //     console.log("1 실행! (q_token 사용됨)")
+                //     const [rows, fields] = await connection.execute(q, q_token)
+                //     // const [rows] = await connection.query(q. q_token)
+                //     // const [rows] = await connection.query(q, q_token)
+                //     return [rows, fields]
+                // } else {
+                //     console.log("2 실행! (q_token 미사용됨)")
+                //     const [rows, fields] = await connection.execute(q)
+                //     // const [rows] = await connection.query(q)
+                //     return [rows, fields]
+                // }
 
-
-
-            const [rows, fields] = q_token ? await connection.execute(q, q_token) : await connection.execute(q)
-            await connection.commit()
-            return [rows, fields]
-
-            // const {
-            //     rows: any
-            // } = q_token ? await connection.execute(q, q_token) : await connection.execute(q)
-            //
-            // // rows1
-            //
-            // let rows: any
-            //
-            // let a = q_token ? await connection.execute(q, q_token) : await connection.execute(q)
-            //
-            // rows = a.rows
-
-            // console.log("1 실행! (q_token 사용됨)")
-            //  =
-            // const [rows] = await connection.query(q. q_token)
-            // const [rows] = await connection.query(q, q_token)
-            // return [rows, fields]
-            // console.log("2 실행! (q_token 미사용됨)")
-            // const [rows, fields] =
-            // const [rows] = await connection.query(q)
-            // }
+                // let rows: mysql.RowDataPacket[] | mysql.RowDataPacket[][] | mysql.OkPacket | mysql.OkPacket[]
 
 
-            // return [rows, fields]
+                const [rows, fields] = q_token ? await connection.execute(q, q_token) : await connection.execute(q)
+                await connection.commit()
+                return [rows, fields]
 
+                // const {
+                //     rows: any
+                // } = q_token ? await connection.execute(q, q_token) : await connection.execute(q)
+                //
+                // // rows1
+                //
+                // let rows: any
+                //
+                // let a = q_token ? await connection.execute(q, q_token) : await connection.execute(q)
+                //
+                // rows = a.rows
+
+                // console.log("1 실행! (q_token 사용됨)")
+                //  =
+                // const [rows] = await connection.query(q. q_token)
+                // const [rows] = await connection.query(q, q_token)
+                // return [rows, fields]
+                // console.log("2 실행! (q_token 미사용됨)")
+                // const [rows, fields] =
+                // const [rows] = await connection.query(q)
+                // }
+
+
+                // return [rows, fields]
+
+            } catch (err: any) {
+                // connection.release()
+                await connection.rollback()
+                console.log('Query Error!! 쿼리에 오류가 있습니다! SQL injection이 발생할 수 있으니 주의해 주세요!')
+                console.error(err)
+                return null
+            } finally {
+                connection.release()
+                // connection.release()
+                // connection.release()
+            }
         } catch (err: any) {
-            // connection.release()
-            await connection.rollback()
-            console.log('Query Error!! 쿼리에 오류가 있습니다! SQL injection이 발생할 수 있으니 주의해 주세요!')
+            console.log('DB Error! MySQL에서 에러가 발생했습니다.')
             console.error(err)
             return null
-        } finally {
-            connection.release()
-            // connection.release()
-            // connection.release()
         }
-    } catch (err: any) {
-        console.log('DB Error! MySQL에서 에러가 발생했습니다.')
-        console.error(err)
-        return null
     }
+
 }
 // process.exit(0)
 
@@ -378,7 +378,7 @@ query = async (
 
 
 // export default query
-export {query}
+    export {query}
 
 // console.log("TEST")
 

@@ -125,28 +125,34 @@ ready = async () => {
             // if (results[0][0]) console.log("434 is true")
             // else console.log("434 is false")
 
-            results = await DB.query('SELECT id FROM users WHERE id=?', [member.id])
 
-            if (results == null) throw "DB에서 문제가 발생했습니다!"
+            if (process.env.NODE_ENV != "withoutDB") {
 
-            if (results[0][0]) {
-            }// console.log(`${member.user.tag} 님은 이미 DB에 존재합니다!`)
-            else {
-                console.log(`${member.user.tag} 님은 DB에 존재하지 않습니다!`)
 
-                // re = await DB.query('INSERT INTO users (id, point, if_attendance_check) VALUES (?, ?, ?)', [
-                //     member.id,
-                //     0,
-                //     false
-                // ]);
-
-                results = await insert_new_user(member.id)
-
+                results = await DB.query('SELECT id FROM users WHERE id=?', [member.id])
 
                 if (results == null) throw "DB에서 문제가 발생했습니다!"
 
-                console.log(`+ ${member.user.tag} 님을 성공적으로 DB에 추가했습니다!`)
+                if (results[0][0]) {
+                }// console.log(`${member.user.tag} 님은 이미 DB에 존재합니다!`)
+                else {
+                    console.log(`${member.user.tag} 님은 DB에 존재하지 않습니다!`)
 
+                    // re = await DB.query('INSERT INTO users (id, point, if_attendance_check) VALUES (?, ?, ?)', [
+                    //     member.id,
+                    //     0,
+                    //     false
+                    // ]);
+
+                    results = await insert_new_user(member.id)
+
+
+                    if (results == null) throw "DB에서 문제가 발생했습니다!"
+
+                    console.log(`+ ${member.user.tag} 님을 성공적으로 DB에 추가했습니다!`)
+
+
+                }
             }
 
 

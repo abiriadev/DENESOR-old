@@ -1,1 +1,1 @@
-worker : ts-node ./bin/start.ts
+worker: node bot.js

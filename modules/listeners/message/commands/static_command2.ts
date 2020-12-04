@@ -25,23 +25,28 @@ static_command2 = new Command(
         condition: async msg => {
             // msg.content == "aaa",
 
-            let results // = await DB.query('SELECT * FROM users')
+            if (process.env.NODE_ENV != "withoutDB")
+            {
+                let results // = await DB.query('SELECT * FROM users')
 
-            results = await DB.query('SELECT question FROM static_commands WHERE question=?', [msg.content])
+                results = await DB.query('SELECT question FROM static_commands WHERE question=?', [msg.content])
 
-            if (results == null) throw "DB에서 문제가 발생했습니다!"
+                if (results == null) throw "DB에서 문제가 발생했습니다!"
 
-            // console.log(`results: ${JSON.stringify(results[0][0])}`);
+                // console.log(`results: ${JSON.stringify(results[0][0])}`);
 
-            if (results[0][0]) {
-                // msg.channel.send(`\`'${content_list[1]}'\` 명령어는 이미 있어요!`)
-                return true
-            }// console.log(`${member.user.tag} 님은 이미 DB에 존재합니다!`)
-            else {
-                // 명령어가 없다면
-                return false
+                if (results[0][0]) {
+                    // msg.channel.send(`\`'${content_list[1]}'\` 명령어는 이미 있어요!`)
+                    return true
+                }// console.log(`${member.user.tag} 님은 이미 DB에 존재합니다!`)
+                else {
+                    // 명령어가 없다면
+                    return false
+                }
+
+            } else {
+                msg.channel.send("현재 기능이 비활성화되어 있습니다!")
             }
-
 
 
         },

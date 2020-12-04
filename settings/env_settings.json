@@ -22,5 +22,14 @@
         "description": "database password"
       }
     }
+  },
+  "withoutDB": {
+    "filename": ".env.withoutDB",
+    "description": "without DB mode",
+    "env_var_list": {
+      "TOKEN": {
+        "description": "Discord bot token"
+      }
+    }
   }
 }
