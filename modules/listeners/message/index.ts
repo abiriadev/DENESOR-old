@@ -26,6 +26,7 @@ import memberRandom from "./commands/member_lottery";
 
 import default_command from "./commands/default_command";
 import mun from "./commands/mun"
+import clear from "./commands/clear";
 // import select_all from "./select_all"
 
 try {
@@ -88,6 +89,7 @@ try {
         guilds,
         attendance_check,
         find_member,
+        clear,
         mun,
         memberRandom,
         static_command,

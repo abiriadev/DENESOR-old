@@ -9,4 +9,4 @@
 /settings/.env
 /settings/.env.dev
 /node_modules
-/test/envSettingFiles\.env/envSettingFiles\.env
+/test/envSettingFiles\.env/envSettingFiles\.env/envSettingFiles\.env
