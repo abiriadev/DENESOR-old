@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DENESOR.js" beforeDir="false" afterPath="$PROJECT_DIR$/DENESOR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DENESOR.ts" beforeDir="false" afterPath="$PROJECT_DIR$/DENESOR.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/start.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/start.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bin/start.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LOG/message_data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/insert_new_user.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +21,11 @@
     <option name="BRANCH" value="small_updates" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Abiria" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -105,8 +101,16 @@
       <updated>1607057322895</updated>
       <workItem from="1607057324379" duration="249000" />
       <workItem from="1607057605408" duration="2467000" />
-      <workItem from="1607102801637" duration="1855000" />
+      <workItem from="1607102801637" duration="2211000" />
     </task>
+    <task id="LOCAL-00001" summary="for hosting">
+      <created>1607106739843</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607106739843</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,7 +124,6 @@
         <option value="$PROJECT_DIR$/modules/utils/promiseDB.js" />
         <option value="$PROJECT_DIR$/modules/utils/all_members.js" />
         <option value="$PROJECT_DIR$/modules/utils/path_validation.js" />
-        <option value="$PROJECT_DIR$/modules/utils/insert_new_user.js" />
         <option value="$PROJECT_DIR$/modules/classes/Command.js" />
         <option value="$PROJECT_DIR$/modules/listeners/ready/ready.js" />
         <option value="$PROJECT_DIR$/modules/listeners/message/index.js" />
@@ -152,5 +155,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="for hosting" />
+    <option name="LAST_COMMIT_MESSAGE" value="for hosting" />
   </component>
 </project>
