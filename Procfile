@@ -1,1 +1,1 @@
-worker: pm2 install @pm2/pm2-version-check && pm2 start ./bin/start.js --name "DENESOR" -i 0
+worker: npm i @pm2/pm2-version-check && pm2 start ./bin/start.js --name "DENESOR" -i 0
