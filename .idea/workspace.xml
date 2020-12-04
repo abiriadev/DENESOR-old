@@ -87,6 +87,7 @@
       <workItem from="1606889064269" duration="1016000" />
       <workItem from="1606953286429" duration="1191000" />
       <workItem from="1607041079348" duration="4345000" />
+      <workItem from="1607098907085" duration="652000" />
     </task>
     <task id="LOCAL-00002" summary="add function that clear messages">
       <created>1607044280828</created>
@@ -95,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607044280828</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add function that cencer the 'ㄷ' chatting">
+      <created>1607049858896</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607049858896</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +124,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="miner version rise&#10;&#10;Committed to saving the event that merges of the three branches" />
     <MESSAGE value="add function that clear messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="add function that clear messages" />
+    <MESSAGE value="add function that cencer the 'ㄷ' chatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="add function that cencer the 'ㄷ' chatting" />
   </component>
 </project>
