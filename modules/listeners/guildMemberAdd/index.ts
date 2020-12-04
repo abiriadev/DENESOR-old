@@ -48,15 +48,37 @@ guildMemberAdd = (member) => {
 
     if (!channel) return;
 
-    channel.send(util.format(config.welcome_message, member.user));
+    if (member.user.bot) {
+      console.log("봇이 오셨군요만")
 
-    setTimeout(() => {
-      // const ch_ID = "752422604194840586"
-      const channel2 = member.guild.channels.cache.find(
-        (ch) => ch.id == config.introduce_channel_ID
-      );
-      channel.send(`${channel2.toString()} 를 확인해보시는 건 어떨까요?`);
-    }, 2000);
+      const role = member.guild.roles.cache.find(role_ele => role_ele.name === '봇');
+    member.roles.add(role);
+
+      channel.send(util.format(`%s봇이 코딩연구소에 도착했어요!` , member.user))
+
+      // channel.send(``)
+
+      setTimeout(() => {
+        // const ch_ID = "752422604194840586"
+        const channel2 = member.guild.channels.cache.find(
+            (ch) => ch.id == "770898439797604352"
+        );
+        channel.send(util.format(`${channel2.toString()} 에서 %s봇을 사용해보실 수 있어요!`, member.user));
+      }, 2000);
+
+    } else {
+
+      channel.send(util.format(config.welcome_message, member.user));
+
+      setTimeout(() => {
+        // const ch_ID = "752422604194840586"
+        const channel2 = member.guild.channels.cache.find(
+            (ch) => ch.id == config.introduce_channel_ID
+        );
+        channel.send(`${channel2.toString()} 를 확인해보시는 건 어떨까요?`);
+      }, 2000);
+
+    }
   } catch (err) {
     console.error(err);
     console.log("환영인사 중 에러가 발생했습니다!");
