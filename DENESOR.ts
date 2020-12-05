@@ -18,7 +18,7 @@ export {}
 
 // denesor.on('message', attendance_check);
 // denesor.on('message', dobae);
-import save from "./modules/listeners/message/save";
+// import save from "./modules/listeners/message/save";
 // import DB from "./modules/utils/promiseDB"
 
 // DB.quer

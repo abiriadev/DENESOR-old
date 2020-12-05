@@ -1,3 +1,5 @@
+export {}
+
 // @ts-ignore
 import client from "../DENESOR"
 

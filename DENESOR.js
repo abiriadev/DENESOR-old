@@ -10,6 +10,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+// denesor.on('message', attendance_check);
+// denesor.on('message', dobae);
+// import save from "./modules/listeners/message/save";
 // import DB from "./modules/utils/promiseDB"
 // DB.quer
 // try {

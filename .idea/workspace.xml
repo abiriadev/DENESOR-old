@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="">
+    <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="for hosting 10">
+      <change afterPath="$PROJECT_DIR$/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DENESOR.js" beforeDir="false" afterPath="$PROJECT_DIR$/DENESOR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DENESOR.ts" beforeDir="false" afterPath="$PROJECT_DIR$/DENESOR.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/import_client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bin/import_client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/start.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bin/start.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/static_command.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/message/commands/static_command.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/static_command2.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/message/commands/static_command2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typings/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/typings/index.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -101,7 +113,8 @@
       <workItem from="1607057324379" duration="249000" />
       <workItem from="1607057605408" duration="2467000" />
       <workItem from="1607102801637" duration="4793000" />
-      <workItem from="1607110587400" duration="1735000" />
+      <workItem from="1607110587400" duration="2095000" />
+      <workItem from="1607143029311" duration="2520000" />
     </task>
     <task id="LOCAL-00001" summary="for hosting">
       <created>1607106739843</created>
@@ -159,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607112304798</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="for hosting 9">
+      <created>1607112348762</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607112348762</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +210,7 @@
         <option value="$PROJECT_DIR$/modules/listeners/message/commands/all_members.js" />
         <option value="$PROJECT_DIR$/modules/listeners/message/commands/default_command.js" />
         <option value="$PROJECT_DIR$/modules/listeners/message/commands/static_command.js" />
+        <option value="$PROJECT_DIR$/test.js" />
       </list>
     </option>
   </component>
@@ -214,6 +235,7 @@
     <MESSAGE value="for hosting 6" />
     <MESSAGE value="for hosting 7" />
     <MESSAGE value="for hosting 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="for hosting 8" />
+    <MESSAGE value="for hosting 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="for hosting 9" />
   </component>
 </project>

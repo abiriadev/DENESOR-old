@@ -79,6 +79,11 @@ static_command = new Command_1.default({
             switch (_a.label) {
                 case 0:
                     _a.trys.push([0, 6, , 7]);
+                    // console.log(`명령어 추가json: ${static_command.toString()}`)
+                    if (process.env.NODE_ENV == "withoutDB") {
+                        msg.send("현재 기능이 비활성화 되어있습니다!");
+                        return [2 /*return*/, 0];
+                    }
                     content_list = msg.content.split(/!/);
                     results = void 0;
                     return [4 /*yield*/, DB.query('SELECT question FROM static_commands WHERE question=?', [content_list[1]])];

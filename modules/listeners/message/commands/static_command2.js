@@ -92,9 +92,9 @@ static_command2 = new Command_1.default({
                         return [2 /*return*/, false];
                     }
                     return [3 /*break*/, 3];
-                case 2:
-                    msg.channel.send("현재 기능이 비활성화되어 있습니다!");
-                    _a.label = 3;
+                case 2: 
+                // msg.channel.send("현재 기능이 비활성화되어 있습니다!")
+                return [2 /*return*/, false];
                 case 3: return [2 /*return*/];
             }
         });
