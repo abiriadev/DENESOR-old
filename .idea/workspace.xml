@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="">
+    <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="for hosting 15: add &quot;pm2&quot;: &quot;^4.5.0&quot;2">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,7 @@
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="Abiria" />
+        <option value="Abiria &lt;abiria.dev@gmail.com&gt;" />
       </list>
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -109,7 +110,7 @@
       <workItem from="1607182745458" duration="587000" />
       <workItem from="1607269844956" duration="1694000" />
       <workItem from="1607273559514" duration="595000" />
-      <workItem from="1607362516669" duration="2197000" />
+      <workItem from="1607362516669" duration="2761000" />
     </task>
     <task id="LOCAL-00001" summary="for hosting">
       <created>1607106739843</created>
@@ -209,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607364324677</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="for hosting 15: add &quot;pm2&quot;: &quot;^4.5.0&quot;,">
+      <created>1607365787105</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1607365787105</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +278,7 @@
     <MESSAGE value="for hosting 12" />
     <MESSAGE value="for hosting 13" />
     <MESSAGE value="for hosting 14" />
-    <option name="LAST_COMMIT_MESSAGE" value="for hosting 14" />
+    <MESSAGE value="for hosting 15: add &quot;pm2&quot;: &quot;^4.5.0&quot;," />
+    <option name="LAST_COMMIT_MESSAGE" value="for hosting 15: add &quot;pm2&quot;: &quot;^4.5.0&quot;," />
   </component>
 </project>
