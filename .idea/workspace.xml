@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +54,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.other" />
     <property name="ts.external.directory.path" value="C:\Users\PC\WebstormProjects\DENESOR\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -104,7 +105,11 @@
       <workItem from="1607057605408" duration="2467000" />
       <workItem from="1607102801637" duration="4793000" />
       <workItem from="1607110587400" duration="2095000" />
-      <workItem from="1607143029311" duration="3474000" />
+      <workItem from="1607143029311" duration="3809000" />
+      <workItem from="1607182745458" duration="587000" />
+      <workItem from="1607269844956" duration="1694000" />
+      <workItem from="1607273559514" duration="595000" />
+      <workItem from="1607362516669" duration="641000" />
     </task>
     <task id="LOCAL-00001" summary="for hosting">
       <created>1607106739843</created>
@@ -190,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607146331664</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="for hosting 13">
+      <created>1607146587290</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607146587290</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +233,6 @@
         <option value="$PROJECT_DIR$/modules/listeners/message/commands/all_members.js" />
         <option value="$PROJECT_DIR$/modules/listeners/message/commands/default_command.js" />
         <option value="$PROJECT_DIR$/modules/listeners/message/commands/static_command.js" />
-        <option value="$PROJECT_DIR$/test.js" />
       </list>
     </option>
   </component>
@@ -250,6 +261,7 @@
     <MESSAGE value="for hosting 10" />
     <MESSAGE value="for hosting 11" />
     <MESSAGE value="for hosting 12" />
-    <option name="LAST_COMMIT_MESSAGE" value="for hosting 12" />
+    <MESSAGE value="for hosting 13" />
+    <option name="LAST_COMMIT_MESSAGE" value="for hosting 13" />
   </component>
 </project>
