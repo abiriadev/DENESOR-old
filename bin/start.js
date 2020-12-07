@@ -323,8 +323,8 @@ var config_json_1 = __importDefault(require("./../settings/config.json"));
             case 11:
                 {
                     client = require("./import_client");
-                    // client.login(process.env.TOKEN)
-                    client.login("NzUwNjEwODg4OTIyMzY2MDMz.X09C3Q.tBeKLiZCTopUpOSDbAmksg1oixo");
+                    client.login(process.env.TOKEN);
+                    // client.login("")
                     // console.log(`argv: ${process.env.argv}`)
                     // setInterval(() => {
                     //     throw "이이이잉ㅇ잉이이ㅣ"

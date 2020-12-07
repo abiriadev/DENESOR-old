@@ -27,6 +27,7 @@
     "discord": "^0.8.2",
     "discord.js": "^12.3.1",
     "dotenv": "^8.2.0",
+    "fs": "^0.0.1-security",
     "google-translate-api": "^2.3.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
