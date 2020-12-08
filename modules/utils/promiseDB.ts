@@ -1,13 +1,14 @@
 // export default function DB() {
 // }
-import fs from "fs/promises";
-
+// import fs from "fs/promises";
+import {promises as fs} from "fs";
 export {}
 
 
 // console.log("dfsjdsjsdfj")
 
 import config from "./../../settings/config.json"
+// @ts-ignore
 import dotenv from "dotenv"
 import mysql from "mysql2/promise"
 import path from "path"

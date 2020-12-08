@@ -63,12 +63,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var path_validation = __importStar(require("./../modules/utils/path_validation"));
 // import readline from "readline"
 var env_settings_json_1 = __importDefault(require("../settings/env_settings.json"));
+// @ts-ignore
 var dotenv_1 = __importDefault(require("dotenv"));
 var path_1 = __importDefault(require("path"));
 // <<<<<<< HEAD
 // import config from "./../settings/config.json"
 // =======
-var promises_1 = __importDefault(require("fs/promises"));
+// import fs from "fs/promises"
+var fs_1 = require("fs");
 // import client from "./../DENESOR"
 // import * as read_env_files from "./read_env_files"
 var config_json_1 = __importDefault(require("./../settings/config.json"));
@@ -288,10 +290,10 @@ var config_json_1 = __importDefault(require("./../settings/config.json"));
                 return [4 /*yield*/, path_validation.check_path(env_file_path)];
             case 4:
                 if (!!(_a.sent())) return [3 /*break*/, 7];
-                return [4 /*yield*/, promises_1.default.writeFile(env_file_path, make_env_file_placeholder(env_settings_list.env_var_list))];
+                return [4 /*yield*/, fs_1.promises.writeFile(env_file_path, make_env_file_placeholder(env_settings_list.env_var_list))];
             case 5:
                 _a.sent();
-                return [4 /*yield*/, promises_1.default.appendFile(path_1.default.join(process.cwd() + '/.gitignore'), "/" + env_file_path)];
+                return [4 /*yield*/, fs_1.promises.appendFile(path_1.default.join(process.cwd() + '/.gitignore'), "/" + env_file_path)];
             case 6:
                 _a.sent();
                 console.log(env_file_path + " \uC5D0 \uC0DD\uC131\uB41C \uD30C\uC77C\uC5D0 \uC62C\uBC14\uB978 \uAC12\uC744 \uC785\uB825\uD558\uACE0 \uB2E4\uC2DC \uC2E4\uD589\uD574 \uC8FC\uC138\uC694!");
@@ -316,7 +318,7 @@ var config_json_1 = __importDefault(require("./../settings/config.json"));
                 return [4 /*yield*/, path_validation.check_path(logfile_path)];
             case 9:
                 if (!!(_a.sent())) return [3 /*break*/, 11];
-                return [4 /*yield*/, promises_1.default.writeFile(logfile_path, "")];
+                return [4 /*yield*/, fs_1.promises.writeFile(logfile_path, "")];
             case 10:
                 _a.sent();
                 _a.label = 11;

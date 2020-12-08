@@ -5,7 +5,8 @@ import dotenv from "dotenv";
 // import env_path_options from "./../settings/env_path_config.json"
 import config from "../../settings/config.json"
 import path from "path";
-import fs from "fs/promises";
+// import fs from "fs/promises";
+import {promises as fs} from "fs";
 import * as path_validation from "./path_validation"
 // import readline from "readline"
 import env_settings from "../../settings/env_settings.json"

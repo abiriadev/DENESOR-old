@@ -9,8 +9,8 @@ import Command from "../../../classes/Command"
 // import static_command_json from "../../../../settings/static_command.json"
 import {log} from "util";
 
-import fs from "fs/promises"
-
+// import fs from "fs/promises"
+import {promises as fs} from "fs";
 
 // let me =
 

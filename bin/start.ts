@@ -8,12 +8,14 @@ export {}
 import * as path_validation from "./../modules/utils/path_validation"
 // import readline from "readline"
 import env_settings from "../settings/env_settings.json"
+// @ts-ignore
 import dotenv from "dotenv"
 import path from "path"
 // <<<<<<< HEAD
 // import config from "./../settings/config.json"
 // =======
-import fs from "fs/promises"
+// import fs from "fs/promises"
+import {promises as fs} from "fs";
 // import client from "./../DENESOR"
 // import * as read_env_files from "./read_env_files"
 import config from "./../settings/config.json";

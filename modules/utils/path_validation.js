@@ -40,7 +40,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.path_validation = exports.check_path = void 0;
-var promises_1 = __importDefault(require("fs/promises"));
+// import fs from "fs/promises"
+var fs_1 = require("fs");
 var path_1 = __importDefault(require("path"));
 var check_path = function (check_path) { return __awaiter(void 0, void 0, void 0, function () {
     var stat, err_1;
@@ -48,7 +49,7 @@ var check_path = function (check_path) { return __awaiter(void 0, void 0, void 0
         switch (_a.label) {
             case 0:
                 _a.trys.push([0, 2, , 3]);
-                return [4 /*yield*/, promises_1.default.stat(check_path)];
+                return [4 /*yield*/, fs_1.promises.stat(check_path)];
             case 1:
                 stat = _a.sent();
                 return [2 /*return*/, true];
@@ -76,7 +77,7 @@ var certify_dir = function (last_path, target_path_split, progress, not_exist_ye
                 if (not_exist_yet = _b.sent())
                     return [2 /*return*/, false];
                 _b.label = 3;
-            case 3: return [4 /*yield*/, promises_1.default.mkdir(present_path)];
+            case 3: return [4 /*yield*/, fs_1.promises.mkdir(present_path)];
             case 4:
                 _b.sent();
                 return [3 /*break*/, 10];

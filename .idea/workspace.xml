@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="099c22ea-5520-40b4-ad40-3cf0686cf416" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/start.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/start.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bin/start.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/static_command.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/message/commands/static_command.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/static_command.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/message/commands/static_command.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/static_command2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/listeners/message/commands/static_command2.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/path_validation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/utils/path_validation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/promiseDB.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/utils/promiseDB.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/read_env_files.ts" beforeDir="false" afterPath="$PROJECT_DIR$/modules/utils/read_env_files.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +117,8 @@
       <workItem from="1607182745458" duration="587000" />
       <workItem from="1607269844956" duration="1694000" />
       <workItem from="1607273559514" duration="595000" />
-      <workItem from="1607362516669" duration="3193000" />
+      <workItem from="1607362516669" duration="4666000" />
+      <workItem from="1607401039296" duration="666000" />
     </task>
     <task id="LOCAL-00001" summary="for hosting">
       <created>1607106739843</created>
@@ -224,7 +232,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607366337952</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="for hosting 15: add &quot;pm2&quot;: &quot;^4.5.0&quot; 3">
+      <created>1607366869715</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1607366869715</updated>
+    </task>
+    <task id="LOCAL-00018" summary="for hosting 16: npm i fs">
+      <created>1607367166541</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1607367166541</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +309,8 @@
     <MESSAGE value="for hosting 14" />
     <MESSAGE value="for hosting 15: add &quot;pm2&quot;: &quot;^4.5.0&quot;," />
     <MESSAGE value="for hosting 15: add &quot;pm2&quot;: &quot;^4.5.0&quot; 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="for hosting 15: add &quot;pm2&quot;: &quot;^4.5.0&quot; 2" />
+    <MESSAGE value="for hosting 15: add &quot;pm2&quot;: &quot;^4.5.0&quot; 3" />
+    <MESSAGE value="for hosting 16: npm i fs" />
+    <option name="LAST_COMMIT_MESSAGE" value="for hosting 16: npm i fs" />
   </component>
 </project>

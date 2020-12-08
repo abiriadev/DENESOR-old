@@ -63,6 +63,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // let static_command;
 // const Command = require('./Command')
 var Command_1 = __importDefault(require("../../../classes/Command"));
+// import fs from "fs".promises
 var DB = __importStar(require("../../../utils/promiseDB"));
 // let static_command =
 // class Command {

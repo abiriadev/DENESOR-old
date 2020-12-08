@@ -9,10 +9,11 @@ export {}
 // const Command = require('./Command')
 import Command from "../../../classes/Command"
 
-import fs from "fs/promises"
+// import fs from "fs".promises
 import * as DB from "../../../utils/promiseDB";
 
 import path from "path"
+import {promises as fs} from "fs";
 
 // let static_command =
 
