@@ -6,15 +6,15 @@
 
 /envSettingFiles
 
-.env
-.env.dev
-.env.withoutDB
+*.env
+*.env.dev
+*.env.withoutDB
 
 /LOG
 
 /settings/.env
 /settings/.env.dev
-/node_modules
+/node_modulesK
 /test/envSettingFiles\.env/envSettingFiles\.env
 
 package-lock.json/envSettingFiles\.env.withoutDB/envSettingFiles\.env/envSettingFiles\.env.withoutDB
