@@ -9,7 +9,8 @@
     "production": "",
     "pm2install": "pm2 install typescript",
     "hosting": "pm2 install typescript && cross-env NODE_ENV=withoutDB pm2 start 'ts-node ./bin/start.ts' --name \"DENESOR\" -o ./api.log -e ./api.log --merge-logs  -i 1",
-    "hosting2": "pm2 install typescript && pm2 delete DENESOR && cross-env NODE_ENV=withoutDB pm2 start 'ts-node ./bin/start.ts' --name \"DENESOR\" -o ./api.log -e ./api.log --merge-logs  -i 1"
+    "hosting2": "pm2 install typescript && pm2 delete DENESOR && cross-env NODE_ENV=withoutDB pm2 start 'ts-node ./bin/start.ts' --name \"DENESOR\" -o ./api.log -e ./api.log --merge-logs  -i 1",
+    "worker": "cross-env NODE_ENV=withoutDB node ./bin/start.js"
   },
   "keywords": [
     "denesor",

@@ -58,6 +58,7 @@ var static_command2_1 = __importDefault(require("./commands/static_command2"));
 var member_lottery_1 = __importDefault(require("./commands/member_lottery"));
 var default_command_1 = __importDefault(require("./commands/default_command"));
 var mun_1 = __importDefault(require("./commands/mun"));
+var clear_1 = __importDefault(require("./commands/clear"));
 // import select_all from "./select_all"
 try {
     try {
@@ -112,6 +113,7 @@ try {
         guilds_1.default,
         attendance_check_1.default,
         find_member_1.default,
+        clear_1.default,
         mun_1.default,
         member_lottery_1.default,
         static_command_1.default,

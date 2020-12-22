@@ -1,5 +1,5 @@
 "use strict";
-// import denesor from "../../DENESOR";
+// msg.reply("dld")
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -59,26 +59,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-// denesor.guilds.cache.forEach(guild => {
-//     console.log("server: ", guild.name)
-//
-//     let members = guild.members.cache
-//
-//     let c = 0
-//
-//     console.log(members.forEach(member => {
-//         c++
-//         console.log(`${c} member: ${member.user.tag}`)
-//
-//         // member.id
-//
-//         // console.log(`${c} member.id: ${member.id} \t user.id: ${member.user.id} => ${member.id == member.user.id}`)
-//     }))
-//
-//     console.log("member count: %s", c)
-// })
-// msg.reply(denesor.guilds.cache)
-// msg.reply("dld")
 var DENESOR_1 = __importDefault(require("../../../DENESOR"));
 var DB = __importStar(require("./../../utils/promiseDB"));
 var insert_new_user_1 = __importDefault(require("../../utils/insert_new_user"));
@@ -172,12 +152,4 @@ ready = function () { return __awaiter(void 0, void 0, void 0, function () {
         return [2 /*return*/];
     });
 }); };
-// let bot_out: Command;
-// bot_out = new Command( //DM으로 올때만 / ! 으로 올때만
-//     {condition : msg => msg.author.bot, action : msg => { /* msg.channel.send("봇은 싫어요! 저리 가세요!") */
-//         }, description : `important command`}
-// )
 exports.default = ready;
-// module.exports = new Command(
-//     {condition : msg => msg.content = "me", action : msg => msg.reply(`네, $msg.author 님!`), description : 'generel command'}
-// )

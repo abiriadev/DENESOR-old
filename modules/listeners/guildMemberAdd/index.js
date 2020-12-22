@@ -41,12 +41,26 @@ guildMemberAdd = function (member) {
         var channel_1 = member.guild.channels.cache.find(function (ch) { return ch.id == config_json_1.default.welcome_channel_ID; });
         if (!channel_1)
             return;
-        channel_1.send(util_1.default.format(config_json_1.default.welcome_message, member.user));
-        setTimeout(function () {
-            // const ch_ID = "752422604194840586"
-            var channel2 = member.guild.channels.cache.find(function (ch) { return ch.id == config_json_1.default.introduce_channel_ID; });
-            channel_1.send(channel2.toString() + " \uB97C \uD655\uC778\uD574\uBCF4\uC2DC\uB294 \uAC74 \uC5B4\uB5A8\uAE4C\uC694?");
-        }, 2000);
+        if (member.user.bot) {
+            console.log("봇이 오셨군요만");
+            var role = member.guild.roles.cache.find(function (role_ele) { return role_ele.name === '봇'; });
+            member.roles.add(role);
+            channel_1.send(util_1.default.format("%s\uBD07\uC774 \uCF54\uB529\uC5F0\uAD6C\uC18C\uC5D0 \uB3C4\uCC29\uD588\uC5B4\uC694!", member.user));
+            // channel.send(``)
+            setTimeout(function () {
+                // const ch_ID = "752422604194840586"
+                var channel2 = member.guild.channels.cache.find(function (ch) { return ch.id == "770898439797604352"; });
+                channel_1.send(util_1.default.format(channel2.toString() + " \uC5D0\uC11C %s\uBD07\uC744 \uC0AC\uC6A9\uD574\uBCF4\uC2E4 \uC218 \uC788\uC5B4\uC694!", member.user));
+            }, 2000);
+        }
+        else {
+            channel_1.send(util_1.default.format(config_json_1.default.welcome_message, member.user));
+            setTimeout(function () {
+                // const ch_ID = "752422604194840586"
+                var channel2 = member.guild.channels.cache.find(function (ch) { return ch.id == config_json_1.default.introduce_channel_ID; });
+                channel_1.send(channel2.toString() + " \uB97C \uD655\uC778\uD574\uBCF4\uC2DC\uB294 \uAC74 \uC5B4\uB5A8\uAE4C\uC694?");
+            }, 2000);
+        }
     }
     catch (err) {
         console.error(err);

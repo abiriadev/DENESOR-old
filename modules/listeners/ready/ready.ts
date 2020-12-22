@@ -1,24 +1,3 @@
-// import denesor from "../../DENESOR";
-
-// denesor.guilds.cache.forEach(guild => {
-//     console.log("server: ", guild.name)
-//
-//     let members = guild.members.cache
-//
-//     let c = 0
-//
-//     console.log(members.forEach(member => {
-//         c++
-//         console.log(`${c} member: ${member.user.tag}`)
-//
-//         // member.id
-//
-//         // console.log(`${c} member.id: ${member.id} \t user.id: ${member.user.id} => ${member.id == member.user.id}`)
-//     }))
-//
-//     console.log("member count: %s", c)
-// })
-// msg.reply(denesor.guilds.cache)
 // msg.reply("dld")
 
 import denesor from "../../../DENESOR";
@@ -102,28 +81,10 @@ ready = async () => {
             // console.log(await re);
             let re: any;
             // re = await DB.query('INSERT INTO test.table1 (id, point, if_attendance_check) VALUES (?, ?, ?)', [
-            //     1133,
-            //     5612,
-            //     true
-            // ]);
-            //
-            // console.log(re);
+
 
             let results
 
-            // results = await DB.query('SELECT id FROM test.table1 WHERE id=43')
-            //
-            // console.log("43: ", results[0]);
-            //
-            // if (results[0][0]) console.log("43 is true")
-            // else console.log("43 is false")
-            //
-            // results = await DB.query('SELECT id FROM test.table1 WHERE id=434')
-            //
-            // console.log("434: ", results[0]);
-            //
-            // if (results[0][0]) console.log("434 is true")
-            // else console.log("434 is false")
 
 
             if (process.env.NODE_ENV != "withoutDB") {
@@ -172,14 +133,4 @@ ready = async () => {
 
 }
 
-// let bot_out: Command;
-// bot_out = new Command( //DM으로 올때만 / ! 으로 올때만
-//     {condition : msg => msg.author.bot, action : msg => { /* msg.channel.send("봇은 싫어요! 저리 가세요!") */
-//         }, description : `important command`}
-// )
-
 export default ready
-
-// module.exports = new Command(
-//     {condition : msg => msg.content = "me", action : msg => msg.reply(`네, $msg.author 님!`), description : 'generel command'}
-// )
