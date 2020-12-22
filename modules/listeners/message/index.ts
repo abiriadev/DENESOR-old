@@ -19,6 +19,7 @@ import all_members from "./commands/all_members"
 import find_member from "./commands/find_member";
 import attendance_check from "./commands/attendance_check"
 
+import message_filter from "./commands/filter";
 import static_command from "./commands/static_command";
 import static_command2 from "./commands/static_command2";
 
@@ -63,23 +64,23 @@ try {
 
     // console.log(config.bad_word_list)
 
-    let message_filter: Command;
-    message_filter = new Command(
-        {
-            condition: msg => {
-                // return msg.content config.bad_word_list;
-                let a = 0
-                config.bad_word_list.forEach(word => {
-                    if (msg.content.match(new RegExp(word, 'i'))) return a = 1
-                })
-                return a
-
-                // return 1
-            },
-            action: msg => msg.reply("욕은 나빠요!"), description: 'important command'
-        }
-        //DM으로 올때만 / ! 으로 올때만
-    )
+    // let message_filter: Command;
+    // message_filter = new Command(
+    //     {
+    //         condition: msg => {
+    //             // return msg.content config.bad_word_list;
+    //             let a = 0
+    //             config.bad_word_list.forEach(word => {
+    //                 if (msg.content.match(new RegExp(word, 'i'))) return a = 1
+    //             })
+    //             return a
+    //
+    //             // return 1
+    //         },
+    //         action: msg => msg.reply("욕은 나빠요!"), description: 'important command'
+    //     }
+    //     //DM으로 올때만 / ! 으로 올때만
+    // )
 
 
     let command_list = [
