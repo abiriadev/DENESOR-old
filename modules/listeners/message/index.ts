@@ -84,6 +84,7 @@ try {
 
 
     let command_list = [
+        // message_filter
         me,
         select_all,
         all_members,

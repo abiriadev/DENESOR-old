@@ -53,6 +53,7 @@ var select_all_1 = __importDefault(require("./commands/select_all"));
 var all_members_1 = __importDefault(require("./commands/all_members"));
 var find_member_1 = __importDefault(require("./commands/find_member"));
 var attendance_check_1 = __importDefault(require("./commands/attendance_check"));
+var filter_1 = __importDefault(require("./commands/filter"));
 var static_command_1 = __importDefault(require("./commands/static_command"));
 var static_command2_1 = __importDefault(require("./commands/static_command2"));
 var member_lottery_1 = __importDefault(require("./commands/member_lottery"));
@@ -89,24 +90,25 @@ try {
     //////////////////////////////////////////////////////////////
     // let a = [/a/, /b/]
     // console.log(config.bad_word_list)
-    var message_filter_1;
-    message_filter_1 = new Command_1.default({
-        condition: function (msg) {
-            // return msg.content config.bad_word_list;
-            var a = 0;
-            config_json_1.default.bad_word_list.forEach(function (word) {
-                if (msg.content.match(new RegExp(word, 'i')))
-                    return a = 1;
-            });
-            return a;
-            // return 1
-        },
-        action: function (msg) { return msg.reply("욕은 나빠요!"); },
-        description: 'important command'
-    }
-    //DM으로 올때만 / ! 으로 올때만
-    );
+    // let message_filter: Command;
+    // message_filter = new Command(
+    //     {
+    //         condition: msg => {
+    //             // return msg.content config.bad_word_list;
+    //             let a = 0
+    //             config.bad_word_list.forEach(word => {
+    //                 if (msg.content.match(new RegExp(word, 'i'))) return a = 1
+    //             })
+    //             return a
+    //
+    //             // return 1
+    //         },
+    //         action: msg => msg.reply("욕은 나빠요!"), description: 'important command'
+    //     }
+    //     //DM으로 올때만 / ! 으로 올때만
+    // )
     var command_list_1 = [
+        // message_filter
         me_1.default,
         select_all_1.default,
         all_members_1.default,
@@ -140,8 +142,8 @@ try {
                     bot_out_1.action(msg);
                     return [3 /*break*/, 9];
                 case 2:
-                    if (!asd(message_filter_1)) return [3 /*break*/, 3];
-                    message_filter_1.action(msg);
+                    if (!asd(filter_1.default)) return [3 /*break*/, 3];
+                    filter_1.default.action(msg);
                     return [3 /*break*/, 9];
                 case 3:
                     if (!(msg.content.charAt(0) == config_json_1.default.prefix)) return [3 /*break*/, 9];

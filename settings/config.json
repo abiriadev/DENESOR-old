@@ -19,8 +19,9 @@
   },
   "welcome_message": "%s님, 코딩 연구소에 오신 것을 환영합니다!",
   "welcome_channel_ID": 751056203299291196,
-  "self_introduction_channel_ID": 761104232832434187,
-  "coding_place": 760797994181722112,
+  "can_use_bot_channel": 770898439797604352,
+  "self_introduction_channel_ID": "761104232832434187",
+  "coding_place": "760797994181722112",
   "goodbye_channel_ID": 752437853241344061,
   "self_ID": 750610888922366033
 }
