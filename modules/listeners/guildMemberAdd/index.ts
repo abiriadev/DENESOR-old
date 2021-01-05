@@ -102,7 +102,7 @@ guildMemberAdd = (member) => {
             }
 
             member.roles.add(member_role);
-            welcome_channel.send(util.format(config.welcome_message, member.user.toString()));
+            welcome_channel.send(util.format(config.welcome_message, member.user.toString()))
             message_list.forEach(
                 (messageSnippet: MessageSnippet, message_index: number) => {
                     console.log(`messageSnippet before: ${JSON.stringify(messageSnippet)}`);
