@@ -19,6 +19,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // import config from "./settings/config.json";
 var guildMemberAdd_1 = __importDefault(require("./modules/listeners/guildMemberAdd"));
 var ready_1 = __importDefault(require("./modules/listeners/ready/ready"));
+var messageReactionAdd = require('./modules/listeners/messageReactionAdd/messageReactionAdd1.js');
 // import ready from "./modules/utils/"
 // const guildMemberAdd = require("./modules/listeners/guildMemberAdd")
 // import all_members from "./modules/utils/all_members";
@@ -192,7 +193,8 @@ try { // for 로 이벤트 연결? -> ㄱㄱ
         "guildMemberRemove": guildMemberRemove_1.default,
         "message": [
             require("./modules/listeners/message"),
-        ]
+        ],
+        "messageReactionAdd": messageReactionAdd
     };
     // console.log(listener_list)-
     //
@@ -229,31 +231,4 @@ catch (err) {
     console.error(err);
     throw "이벤트 리스닝 중 문제가 발생했습니다";
 }
-// setInterval(() => {
-//  throw "이이이잉ㅇ잉이이ㅣ"
-// }, 10000)
-//
-// console.log("로급좀!!!!")
-// all_members(denesor.gu)
-// console.log("aaaaaaaaaa")
-// console.log(denesor.guilds.cache)
-// denesor.on('ready', () => {
-//     console.log(`Logged in as ${denesor.user.tag}!`);
-// 준비되면 채널에 인사하기
-// });
-// denesor.on('message', require('./modules/listeners/message'));
-// denesor.on('guildMemberAdd', guildMemberAdd)
-// save 구문
-// denesor.on('message', onmessage2);
-//     denesor.on('message', require('./modules/listeners/message'))
-//     denesor.on('message', save)
-// denesor.on('guildMemberAdd', )
-// denesor.on('guildMemberRemove', guildMemberRemove)
-// console.log("a")
-// console.log("a")
-// denesor.on('messageReactionAdd', messageReactionAdd1);
-// denesor.login(config.token);
-// DB와의 커넥션을 종료합니당!!
-// connection.end();
-// 
 exports.default = denesor;

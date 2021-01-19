@@ -17,6 +17,9 @@
 
 /node_modules
 
+/test
+/memo
+
 /test/envSettingFiles\.env/envSettingFiles\.env
 
 package-lock.json/envSettingFiles\.env.withoutDB/envSettingFiles\.env/envSettingFiles\.env.withoutDB
