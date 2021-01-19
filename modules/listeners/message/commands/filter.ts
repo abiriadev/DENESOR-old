@@ -4,7 +4,6 @@ import {log} from 'util';
 
 export {};
 
-
 import Command from '../../../classes/Command';
 import config from '../../../../settings/config.json';
 import bad_word_list from './../../../../bad_words_list.json';
@@ -20,15 +19,12 @@ message_filter = new Command(
 
             console.log('검열');
 
-            // return msg.content config.bad_word_list;
-            let a: number = 0;
-            config.bad_word_list.forEach(word => {
-                if (msg.content.match(new RegExp(word, 'i'))) return a = 1;
-            });
+            // let a: number = 0;
+            // config.bad_word_list.forEach(word => {
+            //     if (msg.content.match(new RegExp(word, 'i'))) return a = 1;
+            // });
 
             // if (msg.channel.id != 760415942395691020) {
-
-            console.log('로그');
 
             // if (msg.content.match(/^ㄷ+$/gm)) {
             //     msg.delete();
@@ -59,14 +55,12 @@ message_filter = new Command(
 
                 let warn_message = '';
 
-                // result.forEach(bad_word => {
-                //     warn_message = msg.content;
-                // });
-
                 warn_message = result.reduce((warn_message, bad_word) => warn_message.replace(
                     RegExp(bad_word, 'ig'),
                     '||$&||',
                 ), msg.content);
+
+                // 메세지와 리스너
 
                 const warnMessage: discord.Message = await msg.channel.send(
                     new discord.MessageEmbed()
@@ -120,25 +114,19 @@ message_filter = new Command(
                             console.log("알 수 없는 이모지입니다");
                         }
 
-
                         console.log(`Collected ${reaction.emoji.name}`)
                     });
                 collector.on(
                     'end',
                     collected => {
-
-
                         console.log(`Collected ${collected.size} items`)
                     });
 
+                // 메세지와 리스너 end
+
             }
 
-
-            // return a
-
             const channel: any = msg.channel;
-
-// const ch = msg.channel
 
             console.log(`channel id : ${msg.channel.id}`);
 
@@ -169,53 +157,24 @@ message_filter = new Command(
                     }
 
                     break;
-
                 default:
-
                     break;
-
-                // case :
-                //
-                //     break;
-                //
-                // case :
-                //
-                //     break;
-                //
-                // case :
-                //
-                //     break;
-                //
-                // case :
-                //
-                //     break;
-                //
-                // case :
-                //
-                //     break;
-                //
-                // case :
-                //
-                //     break;
-
             }
 
             if (channel.id != '763712005302779924') {
                 const link_regExp = /(http[s]?|ftp):\/\/(www\.)?discord.gg/img;
 
                 if (msg.content.match(link_regExp)) {
-
                     console.log('링크다 !!!! 검열각각');
-
                 }
-
 
             }
 
-            return a;
-
-// return 1
-        }, action: msg => msg.reply('욕은 나빠요!'),
+            return 1 <= result.length ? 1 : false;
+        },
+        action: () => {
+            return true
+        },
         description: 'important command',
     },
 //DM으로 올때만 / ! 으로 올때만

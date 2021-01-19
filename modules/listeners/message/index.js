@@ -72,14 +72,6 @@ try {
         console.error(err);
         throw "패키지 로드 중 에러가 발생했습니다";
     }
-    // let command_list = [
-    //     me,
-    //     select_all,
-    //     all_members,
-    //     guilds,
-    //     attendance_check,
-    //     find_member,
-    // ]
     var bot_out_1;
     bot_out_1 = new Command_1.default(//DM으로 올때만 / ! 으로 올때만
     {
@@ -87,9 +79,6 @@ try {
             /* msg.channel.send("봇은 싫어요! 저리 가세요!") */
         }, description: "important command"
     });
-    //////////////////////////////////////////////////////////////
-    // let a = [/a/, /b/]
-    // console.log(config.bad_word_list)
     // let message_filter: Command;
     // message_filter = new Command(
     //     {
@@ -124,59 +113,66 @@ try {
     ];
     // a = []
     module.exports = function (msg) { return __awaiter(void 0, void 0, void 0, function () {
-        var asd, _i, command_list_2, command, err_1;
+        var command_check, _i, command_list_2, command, err_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    // await
                     if (msg.content == "!ㅋ") {
                         msg.reply("ㅋㅋㅋ");
                     }
                     _a.label = 1;
                 case 1:
-                    _a.trys.push([1, 10, 11, 12]);
-                    asd = function (command) {
-                        return command.condition(msg);
-                    };
-                    if (!asd(bot_out_1)) return [3 /*break*/, 2];
-                    bot_out_1.action(msg);
-                    return [3 /*break*/, 9];
+                    _a.trys.push([1, 12, 13, 14]);
+                    command_check = function (command) { return __awaiter(void 0, void 0, void 0, function () {
+                        return __generator(this, function (_a) {
+                            switch (_a.label) {
+                                case 0: return [4 /*yield*/, command.condition(msg)];
+                                case 1: return [2 /*return*/, _a.sent()];
+                            }
+                        });
+                    }); };
+                    return [4 /*yield*/, command_check(bot_out_1)];
                 case 2:
-                    if (!asd(filter_1.default)) return [3 /*break*/, 3];
+                    if (!_a.sent()) return [3 /*break*/, 3];
+                    bot_out_1.action(msg);
+                    return [3 /*break*/, 11];
+                case 3: return [4 /*yield*/, command_check(filter_1.default)];
+                case 4:
+                    if (!_a.sent()) return [3 /*break*/, 5];
                     filter_1.default.action(msg);
-                    return [3 /*break*/, 9];
-                case 3:
-                    if (!(msg.content.charAt(0) == config_json_1.default.prefix)) return [3 /*break*/, 9];
+                    return [3 /*break*/, 11];
+                case 5:
+                    if (!(msg.content.charAt(0) == config_json_1.default.prefix)) return [3 /*break*/, 11];
                     msg.content = msg.content.slice(1);
                     console.log("\uAC10\uC9C0\uB41C \uBA85\uB839\uC5B4: " + msg.content);
                     _i = 0, command_list_2 = command_list_1;
-                    _a.label = 4;
-                case 4:
-                    if (!(_i < command_list_2.length)) return [3 /*break*/, 8];
+                    _a.label = 6;
+                case 6:
+                    if (!(_i < command_list_2.length)) return [3 /*break*/, 10];
                     command = command_list_2[_i];
                     return [4 /*yield*/, command.condition(msg)];
-                case 5:
-                    if (!_a.sent()) return [3 /*break*/, 7];
-                    return [4 /*yield*/, command.action(msg)];
-                case 6:
-                    _a.sent();
-                    return [3 /*break*/, 8];
                 case 7:
+                    if (!_a.sent()) return [3 /*break*/, 9];
+                    return [4 /*yield*/, command.action(msg)];
+                case 8:
+                    _a.sent();
+                    return [3 /*break*/, 10];
+                case 9:
                     _i++;
-                    return [3 /*break*/, 4];
-                case 8: return [3 /*break*/, 9];
-                case 9: return [3 /*break*/, 12];
-                case 10:
+                    return [3 /*break*/, 6];
+                case 10: return [3 /*break*/, 11];
+                case 11: return [3 /*break*/, 14];
+                case 12:
                     err_1 = _a.sent();
                     console.log(err_1);
-                    return [3 /*break*/, 12];
-                case 11:
+                    return [3 /*break*/, 14];
+                case 13:
                     // console.log("msg: 는")
                     // console.dir(msg)
                     if (msg.author.id != config_json_1.default.self_ID)
                         console.log(msg.author.tag + " \uC758 \uBA54\uC138\uC9C0 \uC811\uC218 \uC815\uC0C1\uC885\uB8CC: '" + (msg.content.length >= 13 ? msg.content.slice(0, 12) + '...' : msg.content) + "'");
                     return [7 /*endfinally*/];
-                case 12: return [2 /*return*/];
+                case 14: return [2 /*return*/];
             }
         });
     }); };

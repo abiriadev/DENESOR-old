@@ -48,18 +48,11 @@ var message_filter;
 // @ts-ignore
 message_filter = new Command_1.default({
     condition: function (msg) { return __awaiter(void 0, void 0, void 0, function () {
-        var a, result, warn_message, warnMessage, emoji_list_1, filter, collector, channel, link_regExp, r, link_regExp;
+        var result, warn_message, warnMessage, emoji_list_1, filter, collector, channel, link_regExp, r, link_regExp;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     console.log('검열');
-                    a = 0;
-                    config_json_1.default.bad_word_list.forEach(function (word) {
-                        if (msg.content.match(new RegExp(word, 'i')))
-                            return a = 1;
-                    });
-                    // if (msg.channel.id != 760415942395691020) {
-                    console.log('로그');
                     result = [];
                     console.log(msg.content + " \uC5D0 ");
                     bad_words_list_json_1.default.bad_words.forEach(function (bad_word) {
@@ -75,9 +68,6 @@ message_filter = new Command_1.default({
                     // 욕설 삭제
                     msg.delete();
                     warn_message = '';
-                    // result.forEach(bad_word => {
-                    //     warn_message = msg.content;
-                    // });
                     warn_message = result.reduce(function (warn_message, bad_word) { return warn_message.replace(RegExp(bad_word, 'ig'), '||$&||'); }, msg.content);
                     return [4 /*yield*/, msg.channel.send(new discord_js_1.default.MessageEmbed()
                             .setTitle('욕설 삭제')
@@ -134,7 +124,6 @@ message_filter = new Command_1.default({
                     _a.label = 4;
                 case 4:
                     channel = msg.channel;
-                    // const ch = msg.channel
                     console.log("channel id : " + msg.channel.id);
                     switch (channel.id) {
                         case '763712005302779924': // 홍보채널
@@ -156,29 +145,6 @@ message_filter = new Command_1.default({
                             break;
                         default:
                             break;
-                        // case :
-                        //
-                        //     break;
-                        //
-                        // case :
-                        //
-                        //     break;
-                        //
-                        // case :
-                        //
-                        //     break;
-                        //
-                        // case :
-                        //
-                        //     break;
-                        //
-                        // case :
-                        //
-                        //     break;
-                        //
-                        // case :
-                        //
-                        //     break;
                     }
                     if (channel.id != '763712005302779924') {
                         link_regExp = /(http[s]?|ftp):\/\/(www\.)?discord.gg/img;
@@ -186,10 +152,13 @@ message_filter = new Command_1.default({
                             console.log('링크다 !!!! 검열각각');
                         }
                     }
-                    return [2 /*return*/, a];
+                    return [2 /*return*/, 1 <= result.length ? 1 : false];
             }
         });
-    }); }, action: function (msg) { return msg.reply('욕은 나빠요!'); },
+    }); },
+    action: function () {
+        return true;
+    },
     description: 'important command',
 });
 exports.default = message_filter;

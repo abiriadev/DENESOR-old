@@ -41,15 +41,6 @@ try {
         throw "패키지 로드 중 에러가 발생했습니다"
     }
 
-    // let command_list = [
-    //     me,
-    //     select_all,
-    //     all_members,
-    //     guilds,
-    //     attendance_check,
-    //     find_member,
-    // ]
-
     let bot_out: Command;
     bot_out = new Command( //DM으로 올때만 / ! 으로 올때만
         {
@@ -58,11 +49,6 @@ try {
             }, description: `important command`
         }
     )
-
-    //////////////////////////////////////////////////////////////
-    // let a = [/a/, /b/]
-
-    // console.log(config.bad_word_list)
 
     // let message_filter: Command;
     // message_filter = new Command(
@@ -103,13 +89,9 @@ try {
 
     module.exports = async msg => {
 
-        // await
-
         if (msg.content == "!ㅋ") {
             msg.reply("ㅋㅋㅋ")
         }
-
-        // let response: string = ""
 
         try {
             // 나중에 배열 ing
@@ -117,61 +99,19 @@ try {
 
             // command_list
 
-
             // let condition;
-            const asd = command => {
-                return command.condition(msg)
+            const command_check = async command => {
+                return await command.condition(msg)
             }
 
-            if (asd(bot_out)) bot_out.action(msg);
-            else if (asd(message_filter)) message_filter.action(msg);
-            // else if ()
-            else if (msg.content.charAt(0) == config.prefix) {
+            if (await command_check(bot_out)) {
+                bot_out.action(msg)
+            } else if (await command_check(message_filter)) {
+                message_filter.action(msg);
+            } else if (msg.content.charAt(0) == config.prefix) {
                 msg.content = msg.content.slice(1)
 
                 console.log(`감지된 명령어: ${msg.content}`)
-                // console.log(msg.content)
-
-
-                // const re: Command | undefined = command_list.find(command => {
-                // const re: Command | undefined = command_list.(command => {
-                //         await
-                //
-                //         console.log(command)
-                //
-                //         if (await command.condition(msg)) {
-                //             await command.action(msg)
-                //             return true
-                //         }
-                //
-                //         // let a
-                //
-                //         a = (async () => {
-                //             let a
-                //             a = await command.condition(msg)
-                //             console.log(a)
-                //             return a
-                //         })()
-                //
-                //         console.log(`a: ${a}`)
-                //         return a
-                //
-                //         const a = await command.condition(msg)
-                //         console.log(a)
-                //         return a
-                //
-                //
-                //         // })()
-                //         if ((async () => await command.condition(msg))()) {
-                //             command.action(msg)
-                //             return true
-                //         }
-                //     }
-
-
-// re
-
-                // )
 
                 for (const command of command_list) {
                     if (await command.condition(msg)) {
@@ -179,19 +119,6 @@ try {
                         break
                     }
                 }
-
-                // console.log(`re: ${JSON.stringify(re)}`)
-
-
-                //      if (asd(               me                  .action(msg)
-                // else if (asd(       select_all          .action(msg)
-                // else if (asd(      all_members         .action(msg)
-                // else if (asd(           guilds              .action(msg)
-                // else if (asd( attendance_check    .action(msg)
-                // else if (asd(      find_member         .action(msg)
-
-
-                // console.log(`rs: ${JSON.stringify(re)}`)
 
                 // if (!/*<undefined>*/re) {
                 //     msg.channel.send(`\'\`${msg.content}\`\' 존재하지 않는 명령어입니다`)
