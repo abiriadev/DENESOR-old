@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.git
 #*.vscode
 *.idea
@@ -25,4 +26,27 @@
 
 package-lock.json/envSettingFiles\.env.withoutDB/envSettingFiles\.env/envSettingFiles\.env.withoutDB
 
-api.log/envSettingFiles\.env/envSettingFiles\.env.withoutDB
+=======
+*.git
+#*.vscode
+*.idea
+#*.code-workspace
+
+/envSettingFiles
+
+*.env
+
+/LOG
+
+/src/settings/.env
+/src/settings/.env.dev
+
+/node_modules
+
+/test
+/memo
+/dist
+
+/test/envSettingFiles\.env/envSettingFiles\.env
+
+package-lock.json/envSettingFiles\.env.withoutDB/envSettingFiles\.env/envSettingFiles\.env.withoutDB

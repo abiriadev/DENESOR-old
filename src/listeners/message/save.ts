@@ -1,3 +1,4 @@
+
 export {}
 
 import {promises as fs} from "fs";
@@ -24,9 +25,6 @@ save = async msg => {
     }
 }
 
-
-// import path from "path"
-// process.cwd
 
 
 export default save

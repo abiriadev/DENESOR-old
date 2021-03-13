@@ -1,3 +1,5 @@
+
+
 export {}
 
 // import {log} from "util";
@@ -135,5 +137,3 @@ me = new Command(
     }
     // {condition : msg => msg.content = "me", action : msg => msg.reply(`네, $msg.author 님!`), description : 'generel command'}
 );
-
-export default me

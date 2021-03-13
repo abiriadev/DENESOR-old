@@ -1,12 +1,3 @@
-// import guilds from "./commands/guilds";
-
-export {}
-
-// import fs from "fs";
-// import {
-//     config
-// } from "process";
-// import Command from "./Command";
 
 
 import Command from "../../modules/classes/Command"
@@ -14,16 +5,16 @@ import Command from "../../modules/classes/Command"
 import config from "../../settings/config.json"
 import guilds from "./commands/guilds"
 import me from "./commands/me"
-import select_all from "./commands/select_all"
-import all_members from "./commands/all_members"
+// import select_all from "./commands/select_all"
+// import all_members from "./commands/all_members"
 import find_member from "./commands/find_member";
-import attendance_check from "./commands/attendance_check"
+// import attendance_check from "./commands/attendance_check"
 
 import message_filter from "./commands/filter";
-import static_command from "./commands/static_command";
-import static_command2 from "./commands/static_command2";
+// import static_command from "./commands/static_command";
+// import static_command2 from "./commands/static_command2";
 
-import memberRandom from "./commands/member_lottery";
+// import memberRandom from "./commands/member_lottery";
 
 import default_command from "./commands/default_command";
 import mun from "./commands/mun"
@@ -31,15 +22,6 @@ import clear from "./commands/clear";
 // import select_all from "./select_all"
 
 try {
-    try {
-        // const confi
-        //         const discord = require('discord');
-        // const config = require();
-        //         const denesor = require("C:\\windowse\\trash box\\DashBoards\\Tools\\DENESOR\\settings\\denesor.json");
-    } catch (err) {
-        console.error(err)
-        throw "패키지 로드 중 에러가 발생했습니다"
-    }
 
     let bot_out: Command;
     bot_out = new Command( //DM으로 올때만 / ! 으로 올때만
@@ -50,38 +32,19 @@ try {
         }
     )
 
-    // let message_filter: Command;
-    // message_filter = new Command(
-    //     {
-    //         condition: msg => {
-    //             // return msg.content config.bad_word_list;
-    //             let a = 0
-    //             config.bad_word_list.forEach(word => {
-    //                 if (msg.content.match(new RegExp(word, 'i'))) return a = 1
-    //             })
-    //             return a
-    //
-    //             // return 1
-    //         },
-    //         action: msg => msg.reply("욕은 나빠요!"), description: 'important command'
-    //     }
-    //     //DM으로 올때만 / ! 으로 올때만
-    // )
-
-
     let command_list = [
         // message_filter
         me,
-        select_all,
-        all_members,
+        // select_all,
+        // all_members,
         guilds,
-        attendance_check,
+        // attendance_check,
         find_member,
         clear,
         mun,
-        memberRandom,
-        static_command,
-        static_command2,
+        // memberRandom,
+        // static_command,
+        // static_command2,
         default_command
     ]
 
@@ -120,12 +83,6 @@ try {
                     }
                 }
 
-                // if (!/*<undefined>*/re) {
-                //     msg.channel.send(`\'\`${msg.content}\`\' 존재하지 않는 명령어입니다`)
-                // } else {
-                //     await re.action(msg)
-                // }
-
             } else {
                 //
             }
@@ -143,40 +100,3 @@ try {
     console.error(err)
     throw "index.ts에서 에러 발생이다, 이녀석아!!!"
 }
-
-// const config = require('../../../../settings/config.json');
-// const config = require('settings/config.json');
-// import config from "";
-// declare module `*.json` {
-//     const value: any;
-//     export default value;
-// }
-//
-// import * as config from ".\\..\\..\\..\\settings\\config.json";
-
-// import {promises as fs} from "fs";
-
-// config = JSON.parse((async () => await fs.readFile(경로))())
-// const config = JSON.parse(
-
-
-// )
-// const d: Promise<string> = (
-//     async () => {
-//         return data.toString()
-//     }
-// )()
-// const a = async () => {
-//
-//     let data = await fs.readFile(".\\..\\..\\..\\settings\\config.json")
-//     data = data.toString()
-//     console.log(data)
-//     return JSON.parse(data)
-//
-// }
-// const config = JSON.parse(d.toString())
-// import config from ".\\..\\..\\..\\settings\\config.json";
-
-// import {log} from "util";
-// ".\\..\\..\\..\\settings\\config.json"
-// export {}

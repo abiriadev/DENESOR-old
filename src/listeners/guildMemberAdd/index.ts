@@ -1,3 +1,4 @@
+
 import * as Discord from 'discord.js';
 
 // import { DDiscord, Discord } from '@typeit/discord';
@@ -127,6 +128,6 @@ const setTimeouts = (func, time) => {
         func,
         time
     );
-};
+}
 
 export default guildMemberAdd;

@@ -1,6 +1,4 @@
-// import {log} from "util";
 
-import {log} from 'util';
 
 export {};
 
@@ -19,18 +17,6 @@ message_filter = new Command(
 
             console.log('검열');
 
-            // let a: number = 0;
-            // config.bad_word_list.forEach(word => {
-            //     if (msg.content.match(new RegExp(word, 'i'))) return a = 1;
-            // });
-
-            // if (msg.channel.id != 760415942395691020) {
-
-            // if (msg.content.match(/^ㄷ+$/gm)) {
-            //     msg.delete();
-            //     //
-            //     msg.reply(`규칙에 따라 '주요 채널에서의 답변을 위하지 않는 의미없는 채팅(쓸모없이 진정한 답변 여부와는 상관없이 본인 기분대로 쓰는 경우) 또는 도배나 물타기를 유도할 수 있는 단어 또는 좋지 않은 어휘의 말로 판단되어 삭제합니다.`);
-            // }
 
             // 욕설 검사
             let result: Array<string> = [];
@@ -48,26 +34,7 @@ message_filter = new Command(
                 return `||${match || 28373278}||`
             })
 
-            // bad_word_count = parse
-            // RegExp(
-            //     `[^\|](\w*${bad_word}\w*)(?!\|)`,
-            //     'ig',
-            // ), (
-            //     match: string,
-            //     $1: string,
-            //     offset,
-            //     str
-            // ) => {
-            //     bad_word_count++
-            //
-            //     return `||${$1}||`
-            // });
-            // console.log(`    - ${bad_word} 가 있는가? : ${isMatch}`);
-            // if (isMatch) {
-            //     result.push(bad_word);
-            //     console.log(`    - ${bad_word} 가 있는가? : ${isMatch}`);
-            // }
-            // });
+
 
             console.log(`result = ${JSON.stringify(bad_word_count)}`);
 
@@ -78,12 +45,6 @@ message_filter = new Command(
 
                 let warn_message = '';
 
-                //warn_message = result.reduce((warn_message, bad_word) => warn_message.replace(
-                //     RegExp(bad_word, 'ig'),
-                //     '||$&||',
-                // ), msg.content);
-
-                // 메세지와 리스너
 
                 const warnMessage: discord.Message = await msg.channel.send(
                     new discord.MessageEmbed()
@@ -201,6 +162,6 @@ message_filter = new Command(
         description: 'important command',
     },
 //DM으로 올때만 / ! 으로 올때만
-);
+)
 
 export default message_filter;

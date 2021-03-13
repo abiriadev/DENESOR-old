@@ -1,4 +1,4 @@
-// let me;
+
 export {}
 // const Command = require('./Command')
 import Command from "../../../modules/classes/Command"
@@ -17,28 +17,7 @@ mun = new Command(
         action: async msg => {
 
             const admin_id = 662201438621138954
-
-            // console.log(msg.channel.type)
-
-            // if (msg.channel.type == "dm") {
-            //
-            //     msg.channel.send("DM 채널입니다")
-            //
-            //     const question_message = msg.content.slice(4)
-            //     const admin = msg.client.users.cache.find(member => member.id == admin_id)
-            //
-            //     console.log(admin)
-            //
-            //         // .members.cache.find(member => member.id == admin_id)
-            //     // if(admin) console.log("그딴 건 없아ㅓ")
-            //     // me.user.clientusers.cache.find(member => member.id == admin_id)
-            //
-            //     admin.send(`${msg.author.toString()}으로부터 문의사항이 접수되었습니다!`)
-            //     admin.send(`${question_message}`)
-            //
-            // }
-
-            // const admin_id = 662201438621138954
+4
 
             if (msg.channel.type == "dm") {
 
@@ -60,7 +39,3 @@ mun = new Command(
 
 
 export default mun
-
-// module.exports = new Command(
-//     {condition : msg => msg.content = "me", action : msg => msg.reply(`네, $msg.author 님!`), description : 'generel command'}
-// )
