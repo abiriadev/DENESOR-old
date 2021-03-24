@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a0a33552-c100-4d56-a4e0-a2fb230bbf70" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aptfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DENESOR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DENESOR.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bad_words_list.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/import_client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/import_client.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/start.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/start.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecosystem.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/classes/Command.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/classes/Command.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/guildMemberAdd/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/guildMemberAdd/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/guildMemberRemove/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/guildMemberRemove/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/all_members.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/all_members.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/attendance_check.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/attendance_check.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/clear.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/clear.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/default_command.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/default_command.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/filter.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/find_member.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/find_member.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/guilds.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/guilds.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/me.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/me.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/member_lottery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/member_lottery.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/mun.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/mun.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/select_all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/select_all.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/static_command.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/static_command.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/static_command2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/commands/static_command2.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/dobae.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/message_filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/onmessage1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/onmessage2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/save.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/message/save.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/messageReactionAdd/messageReactionAdd1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/ready/ready.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/listeners/ready/ready.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/all_members.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/all_members.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/insert_new_user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/path_validation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/path_validation.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/promiseDB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/promiseDB.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/read_env_files.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/read_env_files.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/utils/trans.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remove_duplicate_property.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/remove_duplicate_property.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resorces/40267fbd4cdf1fbc919ab12c8afef2b7.png" beforeDir="false" afterPath="$PROJECT_DIR$/resorces/DENESOR.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/env_settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/server_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/user_list.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/typings/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/typings/modules/mysql2/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/typings/modules/mysql2/typings.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1mjpwWyDlVCr9BPZS3O4NQPKK0H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../trash box/DashBoards/Discord/DENESOR" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\PC\WebstormProjects\DENESOR\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Users\PC\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\211.6556.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\WebstormProjects\DENESOR\src\bin" />
+      <recent name="C:\Users\PC\WebstormProjects\DENESOR\src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0a33552-c100-4d56-a4e0-a2fb230bbf70" name="Default Changelist" comment="" />
+      <created>1610017098370</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610017098370</updated>
+      <workItem from="1610017103737" duration="654000" />
+      <workItem from="1610019012063" duration="139000" />
+      <workItem from="1610019196162" duration="57000" />
+      <workItem from="1616496528425" duration="264000" />
+      <workItem from="1616584532963" duration="5249000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

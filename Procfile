@@ -1,1 +1,0 @@
-worker: cross-env NODE_ENV=withoutDB pm2 start ./bin/start.js --name "DENESOR" -i 1 && pm2 log
