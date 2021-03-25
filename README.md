@@ -1,2 +1,8 @@
 # DENESOR
-ver 0.10.0
+ver 0.11.0
+
+---
+
+##features
+
+- when '!TEST', reply 'confirm!'
