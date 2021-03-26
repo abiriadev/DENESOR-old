@@ -1,5 +1,8 @@
 import client from '../DENESOR';
 
+// @ts-ignore
+globalThis.stop = Symbol.for('stop');
+
 process.on('exit', code => {
     console.log(`process exit with code ${code}`);
 })
@@ -10,6 +13,7 @@ client
     .login(process.env.TOKEN)
     .catch(err => {
         if (err[Object.getOwnPropertySymbols(err)[0]] === 'TOKEN_INVALID') {
+            console.log(`${process.env.TOKEN} is not a valid token!`)
             console.log('please change token and try again!');
 
             process.exit(3)
