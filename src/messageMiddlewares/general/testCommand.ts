@@ -4,7 +4,7 @@ import messageRouter from "../../frames/messageRouter"
 
 export default messageRouter((msg: MsgEx): boolean => {
 
-    console.log(msg.content)
+    // console.log(msg.content)
 
     return msg.content === 'TEST'
 }, (msg: MsgEx): midRes => {

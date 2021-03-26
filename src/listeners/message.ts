@@ -6,7 +6,7 @@ import prefixCheck from "../messageMiddlewares/prefixCheck"
 import parseArgs from "../messageMiddlewares/parseArgs"
 import messageRouter from "../frames/messageRouter"
 import testCommand from "../messageMiddlewares/general/testCommand"
-// import {msgEx, midRes} from "../types"
+import __help__ from "../messageMiddlewares/commands/__help__"
 import isStop from "../util/typeUtil/isStop"
 
 export default (msg: discord.Message) => {
@@ -22,7 +22,8 @@ export default (msg: discord.Message) => {
     if (isStop(msg)) return msg
 
     const nn_msg: midRes = middlewareChain(
-        testCommand
+        testCommand,
+        __help__,
     )(n_msg)
 
     if (isStop(msg)) return
