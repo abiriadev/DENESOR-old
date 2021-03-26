@@ -1,5 +1,8 @@
 import client from '../DENESOR';
 
+// @ts-ignore
+globalThis.stop = Symbol.for('stop');
+
 process.on('exit', code => {
     console.log(`process exit with code ${code}`);
 })

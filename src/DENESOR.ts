@@ -1,12 +1,18 @@
 import discord from 'discord.js'
+import config from './config.json'
+import * as listeners from "./listeners"
 
-const client = new discord.Client()
+const client: ClientEx = new discord.Client
+
+Object.assign(client, config)
 
 client
-    .on('ready', () => console.log('ready!'))
-    .on('message', async (msg: discord.Message) => {
-        if (msg.content === '!TEST') msg.reply('confirm!')
+    .on('ready', async () => {
+        console.log(`${client.user?.tag} is ready!`)
+
+        client.host = await client.users.fetch(client.hostID)
     })
+    .on('message', listeners.message)
     .on('error', console.error)
 
 export default client
