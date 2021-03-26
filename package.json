@@ -1,6 +1,6 @@
 {
     "name": "denesor",
-    "version": "0.11.0",
+    "version": "0.11.1",
     "description": "denesor is discord bot for server management",
     "main": "src/DENESOR.ts",
     "scripts": {
